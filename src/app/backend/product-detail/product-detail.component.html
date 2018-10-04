@@ -1,0 +1,327 @@
+	<!-- /.page_content -->
+
+  <!-- <app-backend-header></app-backend-header> -->
+	<section class="container-fluid product_page page_content user_module">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content_wrap admin_page">
+				<div class="row">
+
+					<div class="col-xs-12 page_header">
+						<div class="row">
+							<div class="container">
+								<div class="table_div">
+									<div class="tbl_cell left-sec">
+										<h2>Products <a class="btn comn-btn pull-right" routerLink="/backend/product">Back</a></h2>
+									</div>
+									<!-- <div class="tbl_cell right-sec">										
+									</div> -->
+								</div>
+							</div>
+						</div>								
+					</div>
+					<!-- /.page_header -->
+					<div class="col-xs-12 prdct_dtlpage_body page_body">
+						<div class="row">
+							<div class="container">
+								<div class="col-xs-12 detail_content">
+									<div class="row">
+										<div class="col-xs-12 col-md-6 left_sec">
+											<div id="prdctdtl_Carousel" class="carousel prdct-dtl-slid slide" data-ride="carousel">
+											  <!-- Wrapper for slides -->
+											  <div class="carousel-inner" role="listbox">
+											    <div class="item active">
+											    	<a class="img_wrapp fancybox" data-fancybox-group="gallery" rel="group" href="assets/images/products/detail2/01.jpg">
+											      		<img src="assets/images/products/detail2/01.jpg" alt="Image">
+											    	</a>
+											    </div>
+											    <div class="item">
+											    	<a class="img_wrapp fancybox"  data-fancybox-group="gallery" rel="group"  href="assets/images/products/detail2/02.jpg">
+											      		<img src="assets/images/products/detail2/02.jpg" alt="Image">
+											    	</a>
+											    </div>
+											    <div class="item">
+											    	<a class="img_wrapp fancybox"  data-fancybox-group="gallery" rel="group" href="assets/images/products/detail2/03.jpg">
+											      		<img src="assets/images/products/detail2/03.jpg" alt="Image">
+											    	</a>
+											    </div>
+											    <div class="item">
+											    	<a class="img_wrapp fancybox" data-fancybox-group="gallery" rel="group"  rel="ligthbox" href="assets/images/products/detail2/04.jpg">
+											      		<img src="assets/images/products/detail2/04.jpg" alt="Image">
+											    	</a>
+											    </div>
+											    <div class="item">
+											    	<a class="img_wrapp fancybox" data-fancybox-group="gallery" rel="group" rel="ligthbox" href="assets/images/products/detail2/05.jpg">
+											      		<img src="assets/images/products/detail2/05.jpg" alt="Image">
+											    	</a>
+											    </div>
+											  </div>
+
+											  <!-- Controls -->
+											  <ul class="flex-direction-nav">
+											  	<li class="flex-nav-prev">
+											  		<!-- <a class="left carousel-control" href="#prdctdtl_Carousel" role="button" data-slide="prev"> -->
+											  		<a class="left flex-prev" href="#prdctdtl_Carousel" role="button" data-slide="prev">
+													     <span aria-hidden="true">‹</span> <span class="sr-only">Previous</span>
+												    </a>
+												</li>
+											  	<li class="flex-nav-next">
+											  		<a class="right flex-next" href="#prdctdtl_Carousel" role="button" data-slide="next">
+											  			<span aria-hidden="true">›</span> <span class="sr-only">Next</span>
+												    </a>
+												</li>
+											  </ul>
+											</div>
+
+											<!-- Indicators -->
+											<div class="col-xs-12 crsl_thumbnails">
+													<div class="thumb_slider owl-carousel">
+															<owl-carousel
+										  [options]="{nav : false, slideBy : 1 ,margin :0 ,responsive: {
+											'0': { items: 2, margin: 0 },  
+											'360': { items: 3, margin: 0 },  
+											'480': { items: 4, margin: 0 },    
+											'580': { items: 5, margin: 0 },        
+											'992': { items: 4, margin: 0 },
+											'1500': { items: 4, margin: 0 }
+											   }  }"
+										  [items]="images"
+										  [carouselClasses]="['owl-theme', 'sliding']" >
+												<div class="item">
+												  <span data-target="#prdctdtl_Carousel" data-slide-to="0" class="tumb active"><img src="assets/images/products/detail2/01_thumb.jpg" alt=""></span>
+												</div>
+												<div class="item">
+													<span data-target="#prdctdtl_Carousel" data-slide-to="1" class="tumb"><img src="assets/images/products/detail2/02_thumb.jpg" alt=""></span>
+												</div>
+												<div class="item">
+													<span data-target="#prdctdtl_Carousel" data-slide-to="2" class="tumb"><img src="assets/images/products/detail2/03_thumb.jpg" alt=""></span>
+												</div>
+												<div class="item">
+													<span data-target="#prdctdtl_Carousel" data-slide-to="3" class="tumb"><img src="assets/images/products/detail2/04_thumb.jpg" alt=""></span>
+												</div>
+												<div class="item">
+													<span data-target="#prdctdtl_Carousel" data-slide-to="4" class="tumb"><img src="assets/images/products/detail2/05_thumb.jpg" alt=""></span>
+												</div>
+												</owl-carousel>
+											</div>	
+											</div>												
+										</div>
+										<!-- ======== /.left_sec ======== -->
+
+										<div class="col-xs-12 col-md-6 prdct_dtl right_sec">
+											<div class="bagde_sec"><span class="badge red_bg">New</span></div>
+											<h2 class="card-title">Product name/title </h2>
+											<h3 class="card-price">$ 204 <s>$ 250</s></h3>
+											<h5 class="card-rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <small><a href="">(9) Rating</a></small></h5>
+											<hr style="margin: 12px 0;">
+											<div class="card-text">
+												<p>Some quick example text for product description.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut .</p>
+											</div>													
+											<hr style="margin: 12px 0;">
+											<div class="select_color_sec">
+												<span>Color</span>
+												<span class="color_slction">
+														<div class="btn-group" dropdown>
+																<button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle"
+																		aria-controls="dropdown-basic">
+																		 Red <span class="caret"></span>
+																</button>
+																<ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+																	role="menu" aria-labelledby="button-basic">
+																  <li role="menuitem"><a class="dropdown-item" href="#">Red</a></li>
+																  <li role="menuitem"><a class="dropdown-item" href="#">Yellow</a></li>
+																  <li role="menuitem"><a class="dropdown-item" href="#">Orange</a></li>
+																</ul>
+															  </div>
+													</span>
+											</div>
+											<hr style="margin: 12px 0;">
+											<div class="size_selection">
+												<ul>
+													<li>
+														<div class="choose_size">
+															<input type="radio" class="radioType" name="radio">
+															<span class="sizes">S</span>
+														</div>
+													</li>
+													<li>
+														<div class="choose_size">
+															<input type="radio" class="radioType" name="radio">
+															<span class="sizes">M</span>
+														</div>
+													</li>
+													<li>
+														<div class="choose_size">
+															<input type="radio" class="radioType" name="radio">
+															<span class="sizes">L</span>
+														</div>
+													</li>
+													<li>
+														<div class="choose_size">
+															<input type="radio" class="radioType" name="radio">
+															<span class="sizes">XL</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+
+											<hr style="margin: 12px 0;">
+
+											<!-- <div class="card-action">
+												<a href="javascript:void(0)" class="btn comn-btn blubtn">Add to Wishlist</a>
+												<a href="javascript:void(0)" class="btn comn-btn buybtn">Buy Now</a>
+											</div> -->
+										</div>
+										<!-- ======== /.right_sec ======== -->
+									</div>											
+								</div>
+								<!-- /.prdctdtl_pagecontnt -->
+
+								<div class="product_information">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+												<div class="row">
+													<!--Horizontal Tab-->
+											        <div id="PageHorizontalTab" class="page_HorizontalTab">
+															<p-tabView>
+																	<p-tabPanel header="Information">
+																			<div class="Product_info">
+																					<h3>Product information</h3>
+																					<p>Vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+																					<br>
+																					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+																					<br>
+																					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+					
+			<div class="product_accordian">															
+
+    <accordion>
+			<accordion-group heading="Collapsible Group Item #1">
+							<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+							<br>
+							<p>Quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem. </p>
+							<br>
+							<p>Vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+			</accordion-group>
+			<accordion-group heading="Collapsible Group Item #2">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+							<br>		
+							<p>Quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+			</accordion-group>
+			<accordion-group heading="Collapsible Group Item #3">
+							<p>Pellentesque eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem </p>	
+			</accordion-group>
+		  </accordion>
+		</div>																	</div>
+																					</p-tabPanel>
+																	<p-tabPanel header="Technical Specs">
+																			<div class="Product_info">
+																					<h3>Windows</h3>
+																					<ul>
+																						<li>2.33GHz or faster x86-compatible processor, or Intel Atom™ 1.6GHz or faster processor for netbook class devices</li>
+																						<li>Microsoft® Windows Server 2008, Windows 7, Windows 8.1 Classic or Windows 10</li>
+																						<li>512MB of RAM (1GB recommended)</li>
+																						<li>AIR SDK Development Supports Microsoft® Windows 7 and above, 64-bit only</li>
+																					</ul>
+																					<br>
+																					<h3>Mac OS</h3>
+																					<ul>
+																						<li>Intel® Core™ Duo 1.83GHz or faster processor</li>
+																						<li>Mac OS X v10.7, and above </li>
+																						<li>512MB of RAM (1GB recommended)</li>
+																						<li>AIR SDK Development supports Mac OS 10.9 and above, 64bit only</li>
+																					</ul>
+																					<br>
+																					<h3>Android</h3>
+																					<ul>
+																						<li>ARMv7/x86 processor with vector FPU, minimum 550MHz, OpenGL ES 2.0, H.264 and AAC HW decoders</li>
+																						<li>Android™ 4.0 and above</li>
+																					</ul>
+																					<br>
+																					<h3>iOS</h3>
+																					<ul>
+																						<li>iOS 8 and above</li>
+																					</ul>
+																				</div>
+																	</p-tabPanel>
+																	<p-tabPanel header="Quality">
+																			<div class="Product_info">
+																					<p>Pellentesque eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem </p>	
+																				</div>
+																	</p-tabPanel>
+																	<p-tabPanel header="Shipping/Payment">
+																		<div class="Product_info">
+																				<p>Pellentesque eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem </p>	
+																				<br>
+																				<p>Pellentesque eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend. </p>	
+																			</div>
+																		</p-tabPanel>
+																</p-tabView>
+
+											        </div> 	
+										        </div>	
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 Product_reviews">
+												<div class="list-unstyled comment-list scroll_wrap" >
+														<p-scrollPanel [style]="{width: '100%', height: '650px'}">
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+										          </div>
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-danger"><i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+										          </div>
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+										          </div>
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+										          </div>
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+										          </div>
+										          <div class="media"> <span class="message_userpic"><img class="d-flex" src="assets/images/user-header.png" alt="Generic user image"> <span class="user-status bg-success "></span></span>
+										            <div class="media-body">
+										              <h6 class="mt-0 mb-1">Rahul Akshay <small class="pull-right">2:00 pm, 20 January, 2017</small></h6>
+										              <h5 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>&nbsp;</h5>
+										              <p class="description">This is awesome product and, I am very happy with delivery &amp; product packaging. Overall experience is good &amp; I prefer to buy it again from this portals and like more orders.</p>
+										            </div>
+												  </div>
+												  </p-scrollPanel>
+										        </div>
+											</div>	
+										</div>
+									</div>									   
+								</div>
+								<!-- /.product_information -->
+							</div>
+							<!-- /.container -->
+						</div>
+					</div>
+					<!-- /.page_body -->
+				</div>							
+			</div>
+			<!-- /.content_wrap -->
+		</div>		
+	</section> 
+	<!-- /.page_content -->
+<!-- <app-footer></app-footer> -->

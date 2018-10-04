@@ -1,0 +1,318 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+.container{
+    max-width: 1400px !important;
+    width: 100%;
+}
+.page_header {
+	.left-sec {
+		h2 {
+			@include breakpoint(xlarge) {
+				font-size: 24px;
+			}
+			@include breakpoint(large) {
+				font-size: 22px;
+			}
+			@include breakpoint(small) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+/* Report page start */
+.report_content {
+	margin-bottom:50px;
+	@include breakpoint(small) {
+		margin-bottom:30px;
+	}
+	@include breakpoint(x-small) {
+		margin-bottom:20px;
+	}
+	.white-box {
+		background-color:#fff;
+		padding:20px;
+		box-shadow:0px 0px 5px 0px rgba(35, 31, 32, 0.09);
+		p {
+			color: $text-color;
+		}
+		.compile_sec {
+			display: table;
+			width: 100%;
+			.left_srch {
+				display: table-cell;
+				vertical-align: middle;
+				float: none;
+				width: 100%;
+				padding-right:15px;
+				@media (max-width:506px) {
+					float: left;
+					width: 100%;
+					padding-right:0px;
+					text-align: center;
+				}
+				.btn-group {
+                    width: 100%;
+					@media (max-width:506px) {
+						width: 220px;
+					}
+					.btn-default {
+                        width: 100%;
+                        text-align: left;
+						height: 34px;
+						.filter-option {
+							@media (max-width:506px) {
+								text-overflow: ellipsis;
+							}
+						} 
+						&:hover, &:active, &:focus {
+							.caret {
+								background-position:0px -5px;
+								transform: rotate(180deg);
+							}
+						} 
+						.caret {
+							background-image:url('../../../assets/images/icon-arrow-accordion.png');
+							@include image-2x("../../../assets/images/icon-arrow-accordion@2x.png", 9px, 12px);
+							background-repeat:no-repeat;
+							background-position:0px 1px;
+							border:none;
+							width: 9px;
+							height: 8px;
+                            display: inline-block;
+                            right: 9px;
+                            position: absolute;
+                            top:14px;
+						}
+					}
+				}
+			}
+			.comile_btn_sec {
+				display: table-cell;
+				vertical-align: middle;
+				float: none;	
+				min-width: 135px;
+				@media (max-width:506px) {
+					float: left;
+					width: 100%;
+					min-width: auto;
+					margin-top: 15px;
+					text-align:center;
+				}
+			}
+		}
+	}
+}
+
+.data_table {
+	&.white_bg {
+		background-color:#fff;
+		border:solid 1px #e6e6e6;
+		box-shadow:0px 0px 5px 0px rgba(35, 31, 32, 0.09);
+		&.data_overview {
+			margin-bottom: 15px;
+		}
+		&.member_actions {
+			.table {
+				thead {
+					tr {
+						th {
+							padding:10px;
+							&:first-child {
+								padding:10px 20px;					
+							}							
+						}
+						&.deals {
+							th {
+								background-color:#fff;
+								border-top:solid 1px #e6e6e6;		
+								& > table {
+									tr {
+										th {
+											border:none;
+											border-right:solid 1px #e6e6e6;
+											font-size: 14px;
+											text-transform: none;
+											&:last-child {
+												border-right:none;
+											}													
+										}
+									}
+								}						
+							}
+						}
+					}
+				}
+			}
+		}
+		h3 {
+			border-bottom:solid 1px #e6e6e6;
+			font-size: 19px;
+			color: $base-color;
+			padding:20px 20px;
+			@include breakpoint(small) {
+				padding:15px 20px;
+				border-bottom:none;
+				font-size: 16px;
+			}
+		}
+		.table-responsive {
+			@include breakpoint(small) {
+				margin-bottom: 0px;
+			}
+		}
+		.table {
+			margin-bottom: 0px;
+			width: 100%;
+			thead {
+				tr {
+					th {
+						background-color:#fafafa;
+						color: #919191;
+						text-transform: uppercase;
+						font-weight: 400;
+						border-bottom:none !important;
+						border-right:solid 1px #e6e6e6;
+						padding:15px 20px;
+						font-size: 14px;
+						@include breakpoint(x-small) {
+							font-size: 13px;		
+						}	
+						&:last-child {
+							border-right:none;
+						}						
+					}
+				}
+			}
+			tbody {
+				tr {
+					transition: all ease 0.5s;
+					td {
+						background-color:#fff;
+						color: #919191;
+						font-weight: 400;
+						border-bottom:solid 1px #e6e6e6;
+						border-right:none !important;
+						padding:15px 20px;
+						font-size: 15px;		
+						@include breakpoint(small) {
+							font-size: 14px;		
+						}				
+						@include breakpoint(x-small) {
+							font-size: 13px;		
+						}				
+						&.black_txt {
+							color: $heading-color-2;
+							text-transform: uppercase;
+						}
+						&.blue_txt {
+							color: $base-color;
+						}
+					}
+					&:hover, &:focus, &:active {
+						td {
+							background-color:#fafafa;
+							transition: all ease 0.5s;
+						}
+					}
+					&:last-child {
+						td {
+							border-bottom:none;
+							& > table {
+								tr {
+									td {
+										border-bottom:solid 1px #e6e6e6;	
+									}
+									&:last-child {
+										td {
+											border-bottom:none;	
+										}	
+									}
+								}
+							}
+						}						
+					}					
+				}
+			}
+		}
+	}
+}
+/* Report page end */
+
+.btn-group {
+    width: 100%;
+    & > select {
+        left: 100%;
+    }
+    .btn-default {
+        height: 45px;
+        border-radius:3px;
+        background:$white;
+        border: solid 1px #ddd;
+        padding-right:33px;
+        box-shadow: none;
+        transition: all ease 0.5s;
+        &:hover, &:focus, &:active {
+            border: solid 1px $base-color;
+            transition: all ease 0.5s;
+            .caret {
+                border-top: 6px dashed $base-color;
+                transition: all ease 0.5s;
+            }
+        }
+        @media (max-width: 480px) {
+            height: 35px;
+            font-size:13px;
+        }
+        .caret {
+            display: inline-block;
+            border-left: 6px solid rgba(0, 0, 0, 0);
+            border-right: 6px solid rgba(0, 0, 0, 0);
+            border-top: 6px dashed;
+            border-bottom: 0;
+        }
+    }
+    .dropdown-menu {
+        padding: 0px;
+        /* top:101%; */
+        li {
+            a {
+                border-bottom: 1px solid rgb(221, 221, 221);
+                padding: 8px 15px;
+                white-space: nowrap;
+                transition: all ease 0.5s;                
+                &:hover, &:focus, &:active {
+                    transition: all ease 0.5s;
+                }
+                .text {
+                    white-space: normal;
+                }
+                @media (max-width: 480px) {
+                    font-size:13px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+    &.open {
+        .btn-default {
+            background-color: $white;
+            border: solid 1px $base-color;
+            color: rgb(51, 51, 51);
+            outline: none;
+            transition: all ease 0.5s;
+            .caret {
+                display: inline-block;
+                transition: all ease 0.5s;
+            }
+        }
+
+    }
+    .dropdown-menu {
+        width:100% !important;
+        top: 36px;
+    }
+}    

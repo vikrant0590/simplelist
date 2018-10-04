@@ -1,0 +1,49 @@
+<div class="frontend">
+<div class="container-fluid navbar_wrap">
+  <nav class="navbar navbar-default main-navbar navbar-inverse mobileNav"  data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <ul class="responsiveNav">			    		 
+          <li>
+            <ul class="navbar-right mobLinks">
+              <li class="social-link fcbk-lnk"><a href="javascript:void(0)"><span>facebook</span></a></li>
+              <li class="social-link twtr-lnk"><a href="javascript:void(0)"><span>Tweeter</span></a></li>
+              <li class="social-link insta-lnk"><a href="javascript:void(0)"><span>Instagram</span></a></li>
+            </ul>
+          </li>  
+          <li>
+            <button id="navtoggle" type="button"  [ngClass]="!isCollapsed ? 'navbar-toggle':'navbar-toggle collapsed'" (click)="isCollase()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+        </button>
+          </li> 
+        </ul>  
+        <a class="navbar-brand" routerLink="/"><img src="assets/images/logo_lg.png" alt="Simple List"></a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse"  id="collapseBasic" [collapse]="isCollapsed">
+        <!-- <ul id="page_navbar" class="nav navbar-nav page-navbar"></ul> -->
+        <ul class="navbar-right mob_right_txt">
+          <li class="deskLinks social-link fcbk-lnk"><a href="javascript:void(0)"><span>facebook</span></a></li>
+          <li class="deskLinks social-link twtr-lnk"><a href="javascript:void(0)"><span>Tweeter</span></a></li>
+          <li class="deskLinks social-link insta-lnk"><a href="javascript:void(0)"><span>Instagram</span></a></li>
+          <li>
+            <div class="btn-grup">
+              <button type="button" class="comn-btn blubtn"  (click)="goToPage('/front/login')">Register</button>
+              <!-- <button type="button" class="comn-btn blubtn"  (click)="goToPage('/front/login')">Sign In</button> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->			    
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+  </div>
+</nav> -->  		
+</div>
+</div>

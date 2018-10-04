@@ -1,0 +1,330 @@
+	<!-- /.page_content -->
+
+  <!-- <app-backend-header></app-backend-header> -->
+	<section class="container-fluid friends_page page_content user_module">
+      <div class="row">
+        <div class="module_wrap">				
+          <div class="left_body">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content_wrap admin_page">
+              <div class="row">
+        			<div class="col-xs-12 page_header">
+                  <div class="row">
+                    <div class="container">
+                      <div class="table_div">
+                        <div class="tbl_cell left-sec">
+                          <h2>Settings</h2>
+                          <p>Creatively crafted Dashboard for your needs</p>
+                        </div>
+                        <!-- <div class="tbl_cell right-sec">
+                          <button type="button" class="btn comn-btn pull-right" onclick="goBack()">Back</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>								
+                </div>
+                <!-- /.page_header -->
+  
+                <div class="col-xs-12 page_body">
+                    <div class="row">
+                      <div class="container mx_container">
+                        <div class="row">
+                          <div class="col-xs-12 total_overview edit_profileSec">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 total_overview_part edit_profile_Outer">
+                                <div class="white-box">
+                                  <div class="col-xs-12 col-sm-12 col-lg-12 edit_profile_inner">
+                                    <div class="row">
+                                      <h3 class="profile_hding" *ngIf="!showProfiles">My Profile </h3>
+                                      <h3 class="profile_hding" *ngIf="showProfiles">Edit Profile </h3>
+                                    </div>	
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 edit_profile_inner_left">
+                                        <div class="row">
+                                          <div class="upload_your_profile">
+                                            <div class="your_pic" style="background-image: url(assets/images/user-dp-x75-13.jpg);"></div>
+                                          </div>
+                                          <div class="upload_btn_Sec">
+                                            <input type="file" class="inputfile">
+                                            <span class="uploadBtn">Upload Image</span>
+                                          </div>
+                                        </div>	
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 Sign_in_sec edit_profile_inner_right">
+                                        <div class="row">
+                                          <form class="sign_in_form full_info" *ngIf="showProfiles">
+                                              <span class="cross_icon"><a  (click)="closeMe()"></a></span>
+                                            <div class="form_row">
+                                              <p>Full Name</p>	
+                                              <input type="text" class="input_fld" placeholder="" value="Jay Cutler">
+                                            </div>
+    
+                                            <div class="form_row">
+                                              <p>Gender</p>
+                                              <ul class="selectGender">
+                                                <li>
+                                                  <div class="my-radio checked"> <span class="radioBox">
+                                                                <input id="check1" name="radio" type="radio" checked="checked">
+                                                                <label for="check1"></label>
+                                                                </span>
+                                                                <label for="check1" class="lablel">Male</label>
+                                                              </div>
+                                                </li>
+                                                <li>
+                                                  <div class="my-radio"> <span class="radioBox">
+                                                                <input id="check2" name="radio" type="radio">
+                                                                <label for="check2"></label>
+                                                                </span>
+                                                                <label for="check2" class="lablel">Female</label>
+                                                              </div>
+                                                </li>
+                                                <li>
+                                                  <div class="my-radio"> <span class="radioBox">
+                                                                <input id="check3" name="radio" type="radio">
+                                                                <label for="check3"></label>
+                                                                </span>
+                                                                <label for="check3" class="lablel">Rather not say</label>
+                                                              </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <div class="form_row">
+                                              <p>Email Address</p>
+                                              <input type="email" class="input_fld" placeholder="" value="Email address">
+                                            </div>
+                                            <div class="form_row">
+                                              <p>Mobile Number</p>
+                                              <div class="input-group phone-input">
+                                                <span class="input-group-btn">
+                                                    <div class="btn-group" dropdown>
+                                                        <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle"
+                                                                aria-controls="dropdown-basic">
+                                                                 +91 <span class="caret"></span>
+                                                        </button>
+                                                        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                                                            role="menu" aria-labelledby="button-basic">
+                                                          <li role="menuitem"><a class="dropdown-item" href="#">+91</a></li>
+                                                          <li role="menuitem"><a class="dropdown-item" href="#">+92</a></li>
+                                                          <li role="menuitem"><a class="dropdown-item" href="#">+93</a></li>
+                                                          <li role="menuitem"><a class="dropdown-item" href="#">+94</a></li>
+                                                          <li role="menuitem"><a class="dropdown-item" href="#">+95</a></li>
+                                                        </ul>
+                                                      </div>	
+                                                </span>
+                                                <input type="hidden" class="type-input" value="" />
+                                                <input type="text" class="input_fld" placeholder="" value="9876543210" />
+                                              </div>
+                                            </div>
+                                            <div class="form_row">
+                                              <p>Address</p>
+                                              <input type="text" class="input_fld" placeholder="" value="2866 Feathers Hooves Drive">
+                                            </div>
+                                            <div class="form_row">
+                                              <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_right">
+                                                  <p>Country</p>
+                                                  <div class="btn-group" dropdown>
+                                                      <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle"
+                                                              aria-controls="dropdown-basic">
+                                                               United States <span class="caret"></span>
+                                                      </button>
+                                                      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                                                          role="menu" aria-labelledby="button-basic">
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">United States</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">USA</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">Pak</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">Aus</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_left">
+                                                  <p>State</p>
+                                                  <div class="btn-group" dropdown>
+                                                      <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle"
+                                                              aria-controls="dropdown-basic">
+                                                               New York <span class="caret"></span>
+                                                      </button>
+                                                      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                                                          role="menu" aria-labelledby="button-basic">
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">New York</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">Florida</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">Texas</a></li>
+                                                        <li role="menuitem"><a class="dropdown-item" href="#">Hawaii</a></li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+    
+                                            <div class="form_row">
+                                              <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_right">
+                                                  <p>City</p>
+                                                  <input type="text" class="input_fld" placeholder="" value="Syosset">
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_left">
+                                                  <p>Zip Code</p>
+                                                  <input type="text" class="input_fld" placeholder="" value="11791">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="signInButtnSec text-right">
+                                              <ul>
+                                                <li>
+                                                  <a href="javascript:void(0)" class="comn-btn whitebtn">Cancel</a>		
+                                                </li>
+                                                <li>
+                                                  <a href="javascript:void(0)" class="comn-btn blubtn save_btn">Save</a>	
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </form>
+                                          <div class="profile_view"  *ngIf="!showProfiles">
+                                            <h3>Jay Cutler</h3>
+                                            <ul class="cont_info">
+                                              <li class="my_email"><a href="mailto:demonsalvatore@gmail.com">demonsalvatore@gmail.com</a></li>
+                                              <li class="my_phone"><a href="tel:9876543210">+91-9876543210</a></li>
+                                              <li class="my_add">2866 Feathers Hooves Drive
+                                              Syosset, New York 11791
+                                              USA</li>
+                                            </ul>
+                                            <a  class="comn-btn whitebtn edit_profile" (click)="showProfile()">Edit Profile</a>
+                                          </div>
+                                        </div>	
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Total Overview Part-->
+    
+                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 total_overview_part edit_profile_Outer">
+                                <div class="white-box">
+                                  <div class="col-xs-12 col-sm-12 col-lg-12 edit_profile_inner">
+                                    <div class="row">
+                                      <h3>Account Settings </h3>
+                                    </div>	
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-lg-12 Sign_in_sec edit_profile_inner_right">
+                                        <div class="row">
+                                          <form class="sign_in_form">
+                                            <div class="form_row">
+                                              <p class="form_row_hding">Change Password</p>
+                                              <div class="row">
+                                                <div class="form_row">
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 
+                                                  col-lg-6 half_right">
+                                                    <input type="text" class="input_fld" 	placeholder="Old Password" value="">
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 
+                                                  col-lg-6 half_left">
+                                                    <input type="text" class="input_fld" 	placeholder="New Password" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="form_row">	
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 
+                                                  col-lg-6 half_right">
+                                                    <input type="text" class="input_fld" 	placeholder="Confirm Password" value="">
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 
+                                                  col-lg-6 half_left text-right">
+                                                    <a href="javascript:void(0)" class="comn-btn blubtn">Update</a>
+                                                  </div>
+                                                </div>	
+                                              </div>										
+                                            </div>
+    
+                                            <hr style="margin-bottom: 20px;">
+    
+                                            <div class="form_row">
+                                              <p class="form_row_hding">Subscription </p>
+                                              <div class="row">
+                                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 half_right active_plan_info">
+                                                  <ul class="sub_plan_sec">
+                                                    <li class="sub_plan">
+                                                      <p>Current Active Plan</p>
+                                                      <b class="blue_txt plan_detail">Advanced</b>
+                                                    </li>
+                                                    <li>
+                                                      <p>Amount</p>
+                                                      <b>$250</b>
+                                                    </li>
+                                                    <li>
+                                                      <p>Expires at</p>
+                                                      <b class="plan_date">27 jun 2017 at 4:56 PM</b>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4 col-md-4 
+                                                col-lg-4 half_left text-right active_plan_info">
+                                                  <a href="javascript:void(0)" class="comn-btn blubtn">Renew Subscription</a>
+                                                  <a href="javascript:void(0)" class="cancel_subscription">Cancel Subscription</a>
+                                                </div>
+                                              </div>	
+                                            </div>
+    
+                                            <hr style="margin-bottom: 20px;">
+                                            
+                                            <div class="form_row">
+                                              <p class="form_row_hding">Amazon MWS Settings</p>
+                                              <div class="row">
+                                                <div class="form_row">	
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_right">
+                                                    <p>Seller ID</p>
+                                                    <input type="text" class="input_fld" placeholder="Enter Seller ID" value="">
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_left">
+                                                    <p>Marketplace ID</p>
+                                                    <input type="text" class="input_fld" placeholder="Enter Marketplace ID" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="form_row">	
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_right">
+                                                    <p>AWS Access Key ID</p>
+                                                    <input type="text" class="input_fld" placeholder="Enter AWS Access Key ID" value="">
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 half_left">
+                                                    <p>Secret Key</p>
+                                                    <input type="text" class="input_fld" placeholder="Enter Secret Key" value="">
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="signInButtnSec text-right">
+                                              <ul>
+                                                <li>
+                                                  <a href="javascript:void(0)" class="comn-btn blubtn">Link Account</a>	
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </form>
+                                        </div>	
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Total Overview Part-->
+                            </div>	
+                            <!-- row -->
+                          </div>
+                          <!-- Total Overview -->												
+                        </div>	
+                        <!-- /.row -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.page_body -->
+  
+              </div>							
+            </div>
+            <!-- /.content_wrap -->
+          </div>
+          <!-- ========= /.left_body ends ========= -->
+        </div>
+        <!-- /.module_wrap -->
+      </div>		
+    </section> 
+    <!-- /.page_content -->
+
+<!-- <app-footer></app-footer> -->

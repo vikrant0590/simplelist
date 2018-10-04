@@ -1,0 +1,1015 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+.container{
+    max-width: 1400px !important;
+    width: 100%;
+}
+
+.data_view_sec {
+	margin-bottom:0px;
+	display:table;
+	width:100%;
+	@include breakpoint(small){
+		padding:0px 20px;
+	}
+	.left-sec {
+		@include breakpoint(medium){
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+		}		
+	}
+}
+.data_view_content {
+	float:left;
+	width:100%;
+	padding:0px;
+	.Campaign_sec {
+		@include breakpoint(medium) {
+			margin-top: 0px;
+		}
+	}
+	ul {
+		float: left;
+		width: 100%;
+		margin-top: 30px;
+		@include breakpoint(medium) {
+			margin-top: 0px;
+		}
+		li {
+			display: inline-block;
+			padding: 0px 15px;
+			float: left;
+			width: 20%;
+			transition: all ease-out 0.5s;
+			margin-bottom: 30px;		
+			@include breakpoint(xxlarge) {
+				width: 25%;			
+			}
+			@include breakpoint(xlarge) {
+				width: 33.3%;			
+			}
+			@include breakpoint(small) {
+				width: 50%;			
+			}
+			@include breakpoint(x-small) {
+				width: 100%;			
+			}
+
+			&:hover, &:focus, &:active, &.active {
+				.listOfData {
+					background-color:$base-color-2;
+					transition: all ease 0.5s;
+					h2 {
+						color: #fff;
+						/* font-size: 35px;						
+						line-height: 28px;
+						margin:10px 0; */
+					}
+					p {
+						color: #a1aab8;
+					}
+				}
+			}
+			&.locked_list {
+				&:hover, &:focus, &:active, &.active {
+					.listOfData {
+					background-color:#d8d8d8;
+					transition: all ease 0.5s;
+					h2 {
+						color:$text-color;
+						/* font-size: 35px;						
+						line-height: 28px;
+						margin:10px 0; */
+					}
+					p {
+						color:$text-color;
+					}
+				}
+				}
+			}
+			.listOfData {
+				padding:15px;
+				background-color:#fff;
+				border:solid 1px #ddd;
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				height:360px;
+				position: relative;
+				@include breakpoint(xxxlarge) {
+					height:330px;
+				}
+				@include breakpoint(xlarge) {
+					height:300px;
+				}
+				@include breakpoint(small) {
+					height:330px;
+				}
+				h2 {
+					font-size: 47px;
+					font-weight: 700;
+					color: $heading-color-2;
+					margin: 15px 0;
+					line-height: 35px;
+					float: left;
+					width: 100%;
+					@include breakpoint(xxxxlarge) {
+						font-size: 40px;
+					}
+					@include breakpoint(xxxlarge) {
+						font-size: 35px;
+					}
+					@include breakpoint(xxlarge) {
+						font-size: 30px;
+					}
+					@include breakpoint(xlarge) {
+						font-size: 25px;
+						margin: 5px 0;
+						line-height: 25px;
+					}
+					@include breakpoint(medium) {
+						font-size: 20px;
+					}
+					@include breakpoint(small) {
+						margin: 0px 0;
+					}					
+				}
+				p {
+					color: #919191;
+					font-weight: 400;
+					font-size: 14px;
+					margin-bottom: 0px;
+					min-height:40px;
+					float: left;
+					width: 100%;
+					@include breakpoint(small) {
+						font-size: 13px;
+					}
+				}
+				.comn_data_icon {
+					display: inline-block;
+					width: 100%;
+					background-position:center center;
+					background-repeat:no-repeat;
+					width: 100%;
+					height: 38px;
+					&.cost_icon1 {
+						background-image: url(assets/images/cost_5.png);
+						@include image-2x("assets/images/cost_5@2x.png", 29px, 38px);
+					}
+					&.cost_icon2 {
+						background-image: url(assets/images/cost_6.png);
+						@include image-2x("assets/images/cost_6@2x.png", 29px, 38px);
+					}
+					&.cost_icon3 {
+						background-image: url(assets/images/cost_7.png);
+						@include image-2x("assets/images/cost_7@2x.png", 29px, 38px);
+					}
+					&.cost_icon4 {
+						background-image: url(assets/images/cost_8.png);
+						@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+					}
+					&.cost_icon5 {
+						background-image: url(assets/images/cost_8.png);
+						@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+					}
+					&.cost_icon6 {
+						background-image: url(assets/images/cost_9.png);
+						@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+					}
+					&.cost_icon7 {
+						background-image: url(assets/images/cost_9.png);
+						@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+					}
+					&.cost_icon8 {
+						background-image: url(assets/images/cost_8.png);
+						@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+					}
+					&.cost_icon9 {
+						background-image: url(assets/images/cost_10.png);
+						@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+					}
+					&.cost_icon10 {
+						background-image: url(assets/images/cost_10.png);
+						@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+					}
+				}
+			}			
+		}
+	}
+}
+.deals_sec {
+	background-color:rgba(0,0,0,0);
+	@include box-shadow(0px 0px 7px 0px rgba(0, 0, 0, 0.16));
+	padding:0px 5px;
+	display: inline-block;
+	width: 100%;
+	.deals_list {
+		float: left;
+		width: 100%;
+		margin:15px 0px 0;
+	}
+	.table_row {
+		margin-top: 0px;
+		float: left;
+		width: 100%;
+		position: relative;		
+		.table_cell_div {
+			width: 50%;
+			display: inline-block;
+			padding: 0px 8px;		
+			margin-bottom: 10px;	
+			float: left;		
+			@include breakpoint(small) {
+				width: 100%;
+			}	
+			/* &:hover, &:focus, &:active, */ &.active {
+				.Deal_info {
+					background-color:$base-color-2;
+					.deal_table_div {
+						.deal_table_left {
+							h2 {
+								color: #fff;								
+							}	
+							p {
+								color: #fff;
+							}
+						}
+						.deal_table_right {
+							.view_activity {
+								color: #fff;
+								display: none;
+								&:hover, &:focus, &:active {
+									color: $base-color;
+								}
+							}	
+						}						
+					}
+				}
+			}
+			.Deal_info {
+				background-color:#fff;
+				padding:15px;
+				width: 100%;
+				display: inline-block;
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06); 
+				height: 95px;
+				@media (max-width:414px) {
+					height: auto;
+				}
+				.deal_table_div {
+					display: table;
+					width: 100%;
+					.deal_table_left {
+						display: table-cell;
+						float: none;
+						vertical-align: middle;	
+						@media (max-width:414px) {
+							float: left;
+							width: 100%;
+							text-align:  center;
+						}
+						h2 {
+							font-size: 26px;
+							font-weight: 700;
+							color: $heading-color-2;
+							margin-bottom: 0px;							
+							@include breakpoint(medium) {
+								font-size: 20px;
+							}
+							@include breakpoint(small) {
+								font-size: 18px;
+							}
+						}	
+						p {
+							color: #919191;
+							font-weight: 400;
+							font-size: 14px;
+							margin-bottom: 0px;
+							min-height:auto;
+							float: left;
+							width: 100%;
+							@include breakpoint(small) {
+								font-size: 13px;
+							}
+						}
+					}
+					.deal_table_right {
+						display: table-cell;
+						float: none;
+						vertical-align: center;	
+						text-align: right;
+						min-width: 35%;
+						@media (max-width:414px) {
+							float: left;
+							width: 100%;
+							text-align:  center;
+							max-width: 100%;
+							margin-top: 15px;
+						}
+						.deal_comon_cost {
+							display: inline-block;
+							width: 100%;
+							background-position:center right;
+							background-repeat:no-repeat;
+							width: 100%;
+							height: 38px;
+							@media (max-width:414px) {
+								background-position: center center;
+							}
+							&.cost_icon1 {
+								background-image: url(assets/images/cost_5.png);
+								@include image-2x("assets/images/cost_5@2x.png", 29px, 38px);
+							}
+							&.cost_icon2 {
+								background-image: url(assets/images/cost_6.png);
+								@include image-2x("assets/images/cost_6@2x.png", 29px, 38px);
+							}
+							&.cost_icon3 {
+								background-image: url(assets/images/cost_7.png);
+								@include image-2x("assets/images/cost_7@2x.png", 29px, 38px);
+							}
+							&.cost_icon4 {
+								background-image: url(assets/images/cost_8.png);
+								@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+							}
+							&.cost_icon5 {
+								background-image: url(assets/images/cost_8.png);
+								@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+							}
+							&.cost_icon6 {
+								background-image: url(assets/images/cost_9.png);
+								@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+							}
+							&.cost_icon7 {
+								background-image: url(assets/images/cost_9.png);
+								@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+							}
+							&.cost_icon8 {
+								background-image: url(assets/images/cost_8.png);
+								@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+							}
+							&.cost_icon9 {
+								background-image: url(assets/images/cost_10.png);
+								@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+							}
+							&.cost_icon10 {
+								background-image: url(assets/images/cost_10.png);
+								@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+							}	
+							&.cost_icon11 {
+								background-image: url(assets/images/cost_11.png);
+								@include image-2x("assets/images/cost_11@2x.png", 29px, 38px);
+							}
+							&.cost_icon12 {
+								background-image: url(assets/images/cost_12.png);
+								@include image-2x("assets/images/cost_12@2x.png", 29px, 38px);
+							}						
+						}	
+						.view_activity {
+							color: $heading-color-2;
+							font-size: 13px;
+							text-decoration: none;
+							&:hover, &:focus, &:active {
+								color: $base-color;
+							}
+						}				
+					}
+				}
+			}
+		}
+	}
+}
+
+.Deal_info {
+	background-color:#fff;
+	padding:15px;
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06); 
+	height: 95px;
+	@media (max-width:414px) {
+		height: auto;
+	}
+	.deal_table_div {
+		display: table;
+		width: 100%;
+		.deal_table_left {
+			display: table-cell;
+			float: none;
+			vertical-align: middle;	
+			@media (max-width:414px) {
+				float: left;
+				width: 100%;
+				text-align:  center;
+			}
+			h2 {
+				font-size: 26px;
+				font-weight: 700;
+				color: $heading-color-2;
+				margin-bottom: 0px;
+				@include breakpoint(xxxlarge) {
+					font-size: 20px;
+				}
+				@include breakpoint(medium) {
+					font-size: 20px;
+				}
+				@include breakpoint(small) {
+					font-size: 18px;
+				}
+			}	
+			p {
+				color: #919191;
+				font-weight: 400;
+				font-size: 14px;
+				margin-bottom: 0px;
+				min-height:auto;
+				float: left;
+				width: 100%;
+				@include breakpoint(small) {
+					font-size: 13px;
+				}
+			}
+		}
+		.deal_table_right {
+			display: table-cell;
+			float: none;
+			vertical-align: center;	
+			text-align: right;
+			min-width: 35%;
+			@media (max-width:414px) {
+				float: left;
+				width: 100%;
+				text-align:  center;
+				max-width: 100%;
+				margin-top: 15px;
+			}
+			.deal_comon_cost {
+				display: inline-block;
+				width: 100%;
+				background-position:center right;
+				background-repeat:no-repeat;
+				width: 100%;
+				height: 38px;
+				@media (max-width:414px) {
+					background-position: center center;
+				}
+				&.cost_icon1 {
+					background-image: url(assets/images/cost_5.png);
+					@include image-2x("assets/images/cost_5@2x.png", 29px, 38px);
+				}
+				&.cost_icon2 {
+					background-image: url(assets/images/cost_6.png);
+					@include image-2x("assets/images/cost_6@2x.png", 29px, 38px);
+				}
+				&.cost_icon3 {
+					background-image: url(assets/images/cost_7.png);
+					@include image-2x("assets/images/cost_7@2x.png", 29px, 38px);
+				}
+				&.cost_icon4 {
+					background-image: url(assets/images/cost_8.png);
+					@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+				}
+				&.cost_icon5 {
+					background-image: url(assets/images/cost_8.png);
+					@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+				}
+				&.cost_icon6 {
+					background-image: url(assets/images/cost_9.png);
+					@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+				}
+				&.cost_icon7 {
+					background-image: url(assets/images/cost_9.png);
+					@include image-2x("assets/images/cost_9@2x.png", 29px, 38px);
+				}
+				&.cost_icon8 {
+					background-image: url(assets/images/cost_8.png);
+					@include image-2x("assets/images/cost_8@2x.png", 29px, 38px);
+				}
+				&.cost_icon9 {
+					background-image: url(assets/images/cost_10.png);
+					@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+				}
+				&.cost_icon10 {
+					background-image: url(assets/images/cost_10.png);
+					@include image-2x("assets/images/cost_10@2x.png", 29px, 38px);
+				}	
+				&.cost_icon11 {
+					background-image: url(assets/images/cost_11.png);
+					@include image-2x("assets/images/cost_11@2x.png", 29px, 38px);
+				}
+				&.cost_icon12 {
+					background-image: url(assets/images/cost_12.png);
+					@include image-2x("assets/images/cost_12@2x.png", 29px, 38px);
+				}						
+			}	
+			.view_activity {
+				color: $heading-color-2;
+				font-size: 13px;
+				text-decoration: none;
+				&:hover, &:focus, &:active {
+					color: $base-color;
+				}
+			}				
+		}
+	}
+}
+/* breakdown_detail_blocks start */
+.breakdown_detail {
+	margin-top:15px;
+	.breakdown_detail_blocks {
+		margin-bottom: 25px;
+		.breakdown_detail_blocks_inner {
+			background-color:#fff;
+			box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.06);
+			display: inline-block;
+			width: 100%;
+			.breakdown_detail_blocks_content_top {			
+				padding:15px;
+				display: table;
+				width: 100%;
+				box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08); 
+				position: relative;
+				z-index: 1;
+				.breakdown_detail_blocks_content_top_left {
+					display: table-cell;
+					vertical-align: middle;
+					float: none;
+					h2 {
+						font-weight: 700;
+						font-size: 45px;
+						@include breakpoint(xxxxlarge) {
+							font-size: 40px;
+						}
+						@include breakpoint(xxxlarge) {
+							font-size: 35px;
+						}
+						@include breakpoint(xxlarge) {
+							font-size: 30px;
+						}
+						&.green-color {
+							color: #34cf4d !important;
+						}
+						&.blue-color {
+							color: $base-color !important;
+						}
+						&.red-color {
+							color: #fe6361 !important;
+						}
+						&.grey-color {
+							color: #888888 !important;
+						}
+						&.light-green-color {
+							color: #cdd588 !important;
+						}
+						&.yellow-color {
+							color: #e8c660 !important;
+						}
+					}
+					p {
+						color: $text-color;
+						font-size: 18px;
+						@include breakpoint(xlarge) {
+							font-size: 15px;
+						}
+					}
+				}
+				.breakdown_detail_blocks_content_top_right {
+					display: table-cell;
+					vertical-align: middle;
+					float: none;
+					text-align: right;
+					.comnbreakdown_icon {
+						display: inline-block;
+						background-position: center right;
+						background-repeat:no-repeat;
+						width: 65px;
+						height: 60px;
+						&.cart_1 {
+							background-image: url(assets/images/cart-1.png);
+							@include image-2x("assets/images/cart-1@2x.png", 65px, 49px);
+						}				
+						&.cart_2 {
+							background-image: url(assets/images/cart-2.png);
+							@include image-2x("assets/images/cart-2@2x.png", 67px, 56px);
+						}		
+						&.cart_3 {
+							background-image: url(assets/images/cart-3.png);
+							@include image-2x("assets/images/cart-3@2x.png", 54px, 56px);
+						}	
+						&.cart_4 {
+							background-image: url(assets/images/cart-4.png);
+							@include image-2x("assets/images/cart-4@2x.png", 54px, 54px);
+						}		
+						&.cart_5 {
+							background-image: url(assets/images/cart-5.png);
+							@include image-2x("assets/images/cart-5@2x.png", 59px, 59px);
+						}
+						&.cart_6 {
+							background-image: url(assets/images/cart-6.png);
+							@include image-2x("assets/images/cart-6@2x.png", 55px, 54px);
+						}					
+					}
+				}
+			}
+			.deals_n_banner_status {
+				float: left;
+				width: 100%;
+				background-color:#fafafa;
+				display: table;
+				.deals_left {
+					display: table-cell;
+					vertical-align: middle;
+					float: none;
+					width: 50%;
+					border-right:solid 1px #ddd;
+					padding:20px;
+					@include breakpoint(small) {
+						padding:15px;
+					}
+					@include breakpoint(small) {
+						padding:15px 10px;
+					}
+					&:last-child {
+						border-right:none;
+					}
+					p {
+						font-size: 16px;
+						color: #656565;
+						@include breakpoint(xxxlarge) {
+							font-size: 15px;
+						}
+						@include breakpoint(small) {
+							font-size:14px;
+						}
+						@include breakpoint(x-small) {
+							font-size:13px;
+						}
+						b {
+							&.noOfDeals {
+								font-size: 26px;
+								font-weight: 700;
+								color: $heading-color-2;
+								line-height: 20px;
+								@include breakpoint(xxxxlarge) {
+									font-size: 20px;
+								}
+								@include breakpoint(xxxlarge) {
+									font-size: 18px;
+								}
+								@include breakpoint(small) {
+									font-size: 16px;
+								}
+								@include breakpoint(x-small) {
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.page_HorizontalTab {
+    clear: both;
+    float: left;
+    max-width: 100%;
+    position: relative;
+    .ui-tabview{
+        padding: 0px;
+        background: transparent;
+        border: 0px;
+        .ui-tabview-nav{
+            border-bottom: 0px solid #d9d9d9;
+            float: left;
+            margin-bottom: 2px;
+            width: 100%;
+            padding: 0px; 
+            li{
+                background-color: rgba(0, 0, 0, 0) !important;
+                border: none;
+                @include border-radius(3px 3px 0 0);
+                color: #61c4de;
+                cursor: pointer;
+                display: inline-block;
+                float: left;
+                line-height: 1.3;
+                margin-bottom: -1px;
+                margin-right: 5px;
+                padding: 10px 15px !important;
+                width: auto;
+                a{
+                    padding: 0px;
+                    color:rgb(193, 193, 193);
+                }
+                &:hover{
+                    background-color: #d4d4d4 !important;
+                    a{
+                        color: #202020 !important;
+                    }
+                }
+                &.ui-state-active{
+                    background-color: #61c4de !important;
+                    a{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+        .ui-tabview-panels{
+            background:transparent; 
+            border: 0px solid #d9d9d9;
+         	padding:0px !important;
+	        display: inline-block;
+            width: 100%;
+            border-top: 1px solid #d9d9d9;
+            .ui-tabview-panel{
+                padding: 0px !important;
+            }
+            
+        }
+    }
+}
+.Campaign_sec {
+    margin-top: 50px;
+    .Campaign_detail {
+        h2 {
+            margin-bottom: 25px;
+            float: left;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+/* Campaign page style start */
+.Campaign_sec {
+	margin-top:50px;
+	@include breakpoint(small) {
+		margin-top:20px;
+	}
+	.banner_row {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.Campaign_detail {
+		@include breakpoint(xlarge) {
+			float: left;
+			width: 100%;
+		}
+		&.banners_ads {
+			padding:0px 24px !important;
+
+			&:first-child {
+				@include breakpoint(xlarge) {
+					margin-bottom: 30px;
+				}
+				.table_row {
+					&:before {
+						position: absolute;
+						width: 22px;
+						height: 5px;
+						content: '';
+						right: -40px;
+						top: 50%;			
+						@include transform(-50%);
+						background-color:#e2e2e2;
+						border:solid 1px #ddd;
+						border-radius:100px;
+						border-top-color:#cecece;
+						border-bottom-color:#fff;
+						@include breakpoint(xlarge) {
+							background-color:rgba(0,0,0,0);
+							border:none;
+							width: 0px;
+						}
+					}	
+				}	
+			}	
+		}
+		h2 {
+			margin-bottom: 25px;
+			float: left;
+			width: 100%;
+			font-size: 20px;
+			font-weight: 600;
+			@include breakpoint(small) { 
+				font-size: 17px;
+				margin-bottom: 15px;
+			}
+		}
+		.page_HorizontalTab {
+			.tab_header {
+				.resp-tabs-list {
+					margin-bottom: 0;
+				}
+			}			
+			.resp-tabs-container {
+				background-color:rgba(0,0,0,0);
+				@include box-shadow(0px 0px 7px 0px rgba(0, 0, 0, 0.16));
+				padding:15px;
+				display: inline-block;
+				width: 100%;
+				.resp-tab-content {
+					border:none;	
+					padding:0px;	
+					/* @include breakpoint(medium) {
+						border:solid 1px #ddd;	
+						padding:15px;
+					}	 */		
+					&.ongoing_campaign {
+						hr {
+							margin: 0px;
+						}
+						ul {
+							float: left;
+							width: 100%;
+							&.Campaign_detail_list {
+								& > li {
+									display: inline-block;
+									float: left;
+									width: 100%;
+									background-color:#fff;
+									padding:0px;
+									@include box-shadow(0px 0px 7px 0px rgba(0, 0, 0, 0.13));
+									margin-bottom: 15px;
+									&:last-child {
+										margin-bottom: 0px;
+									}
+									&.inactive {
+										.custom_campaign {
+											opacity: 0.5;
+										}
+										.custom_campaign_information {
+											opacity: 0.5;	
+										}
+    									.select_product {
+    										.selected_product_content {
+    											.product_img_sec {
+    												.product_img {
+    													-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    													filter: grayscale(100%);
+    												}
+    											}
+    										}
+    									}
+    									.daysLeft {
+    										.dropdown {
+    											.btn {
+    												cursor: auto;
+    												&:hover, &:active, &:focus {
+														.caret {
+															background-position:0px 0px;
+														}
+													}
+    											}
+    										}
+    									}
+									}
+								}
+							}							
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+.totalMembers_div {
+	display:table;
+	width:302px;
+	background-color:#fff;
+	padding:10px 20px;
+	min-width:302px;
+	float:right;
+	position: absolute;
+	top: -92px;
+	right: 0;
+	@include breakpoint(xlarge) {
+		top: 0px;
+	}
+	@include breakpoint(xlarge) {
+		position: relative;
+		vertical-align: middle;
+	}
+	@include breakpoint(xlarge) {
+		max-width:250px;
+		padding:10px 14px;
+	}	
+	@include breakpoint(medium) {
+		margin-bottom: 15px;
+	}
+	@include breakpoint(x-small) {
+		max-width:100%;
+	}	
+	.total_member_inner1 {
+		display: table;
+		width: 100%;
+	}
+	.total_member_inner2 {
+        display: block;
+	}
+	&.advanced_data_tab {
+		display: none;
+	}
+	&.advanced_data_tab {
+		display: none;
+	}
+	&.member_action_tab {
+		background-color:$base-color-2;
+        margin-top: 13px;
+        top:-60px;
+		.total_member_inner1 {
+			display: none;
+		}
+		.total_member_inner2 {
+			display: block;
+			display: table;
+			width: 100%;
+		}
+		.totalMembers_div_left {
+			h2 {
+				color: #fff;
+				margin-bottom: 5px;
+			}
+			p {
+				color: #b9c0ca;
+			}
+		}
+		.totalMembers_div_right {			
+			.member_cost {
+				display: inline-block;
+				width: 100%;								
+				.comn_mbr_icon {
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					background-position:center;
+					background-repeat:no-repeat;
+					&.m_cost_icon_1 {
+						background-image:url('assets/images/cost_5.png');
+						@include image-2x("assets/images/cost_5@2x.png", 29px, 38px);
+					}
+				}
+				
+			}
+		}
+	}
+	.totalMembers_div_left {
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+		text-align: left;
+		width: 50%;
+		h2 {
+			font-size: 35px;
+			font-weight: 700;
+			color: $base-color;
+			margin:0px;
+			line-height: 30px;
+			@include breakpoint(xlarge) {
+				font-size: 26px;
+				line-height: 25px;
+			}
+		}
+		p {
+			color: $heading-color-2;
+			font-size: 17px;
+			font-weight: 400;
+			@include breakpoint(xlarge) {
+				font-size: 14px;
+			}
+		}
+	}
+	.totalMembers_div_right {
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+		text-align: right;
+		width: 50%;
+		a {
+			&.view_activity {
+				color: $heading-color-2;
+				font-size: 13px;
+				font-weight: 400;
+				text-decoration: none;
+				&:hover, &:focus, &:active {
+					color: $base-color;
+				}
+			}
+		}
+		.activity_progress {
+			margin-top: 29px;
+			@include breakpoint(xlarge) {
+				margin-top: 19px;
+			}
+		}
+	}
+}

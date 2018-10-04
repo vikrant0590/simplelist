@@ -1,0 +1,301 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+/* subscription plans */
+.subscription_plan_sec {
+	background-color:#fff;
+	padding:30px 15px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); 	
+}
+.pricing_table_sec {
+float: left;
+width: 100%;
+padding: 60px 0px;
+text-align:center;
+@include breakpoint(small) {
+    padding: 30px 0px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $base-color-2;
+    padding:0px 15px;
+    @include breakpoint(medium) {
+        font-size: 25px;
+    }
+    @include breakpoint(x-small) {
+        font-size: 20px;
+    }
+}
+p {
+    color: $text-color;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.pricing_table {
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    @include breakpoint(small) {
+        margin-top: 0px;
+    }
+    .price_list_table {
+        .price_list_table_inner_contnt {
+            background:#fff;				
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            &.top_spacing {
+                margin:30px 0px;
+            } 
+            .Price_table_hding {
+                padding:20px 15px;
+                border-bottom:solid 1px #ddd;
+                h3 {
+                    color: $base-color;
+                    font-size: 25px;
+                    font-weight:700;
+                    @include breakpoint(medium) {
+                        font-size: 20px;
+                    }
+                    @include breakpoint(small) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .Price_of_plan {
+                padding:20px 15px;
+                background:#f9f9f9;
+                min-height: 92px;
+                h3 {
+                    color: $base-color-2;
+                    font-size: 29px;
+                    font-weight:700;
+                    @include breakpoint(small) {
+                        font-size: 20px;
+                    }
+                    sub {
+                        bottom: -0.0em;
+                        font-size: 20px;
+                    }
+                }
+                h4 {
+                    color: $base-color-2;
+                    font-size: 20px;
+                    font-weight:700;
+                    @include breakpoint(xlarge) {
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    color: $base-color-2;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                }
+                .best_value_sec {
+                    margin-top: 15px;
+                    .best_value {
+                        position:relative;
+                        /* background-color:#ff6263; */
+                        display: inline-block;
+                        padding:7px 14px;
+                        background-repeat:no-repeat;
+                        background-size:cover;
+                        background-image:url('assets/images/value_img.png');
+                        @include image-2x("assets/images/value_img@2x.png", 100%, auto);
+                        b {
+                            font-weight: 800;
+                            font-size: 17px;
+                            color: #fff;
+                            padding:4px 10px;
+                            text-transform: uppercase;
+                            line-height: 25px;
+                            display: inline-block;
+                            /* border-top:dashed 1px #fff;
+                            border-bottom:dashed 1px #fff; */
+                            @include breakpoint(small) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }					
+            }
+            .plan_information {
+                ul {
+                    li {
+                        color: $base-color-2;
+                        font-size: 14px;
+                        padding:10px 20px 10px 60px;
+                        text-align: left;
+                        position:relative;
+                        border-top:solid 1px #ddd;
+                        &:before {
+                            position:absolute;
+                            left: 0px;
+                            top: 0px;
+                            content: '';
+                            width: 50px;
+                            height: 40px;
+                            display: inline-block;
+                            background-position:29px 13px;
+                            background-repeat:no-repeat;
+                            background-image:url('assets/images/pircing_tick.png');
+                            @include image-2x("assets/images/pircing_tick@2x.png", 20px, 16px);
+                        }
+                        ul {
+                            &.nstdUL {
+                                li {
+                                    position:relative;
+                                    border:none;
+                                    padding:0px 20px;
+                                    margin-top:10px;
+                                    &:before {
+                                        position:absolute;
+                                        left: 0px;
+                                        top: 9px;
+                                        content: '';
+                                        width: 8px;
+                                        height: 2px;											
+                                        display: inline-block;
+                                        background-image:none;
+                                        background-color:$base-color-2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .custom_plan_img {
+                margin-top: 10px;
+            }
+            .plan_footer {
+                padding:15px;
+                &.blue_color1 {
+                    background:$base-color;
+                    transition: all ease 0.5s;
+                    &:hover, &:focus, &:active {
+                        background-color:$base-color-2;
+                    }
+                }
+                &.blue_color2 {
+                    background:$base-color-2;
+                    transition: all ease 0.5s;
+                    &:hover, &:focus, &:active {
+                        background-color:$base-color;
+                    }
+                }
+                .choose_plan_btn {
+                    color: #fff;
+                    font-size: 23px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    @include breakpoint(small) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }			
+    }
+}
+}
+.free_trail_sec {
+margin-top: 50px;
+float:left;
+width:100%;
+@include breakpoint(small) {
+    padding:0px 15px;
+    margin-top: 30px;
+}
+@include breakpoint(x-small) {
+    margin-top: 10px;
+}
+.best_value {
+    position:relative;
+    display: inline-block;
+    padding:7px 14px;
+    background-repeat:no-repeat;
+    background-image:url('assets/images/value_img1.png');
+    @include image-2x("assets/images/value_img1@2x.png", 100%, auto);
+    background-size:100%;
+    @media (max-width:546px) {
+        background-color:#ff6263;
+        background-image:none;
+    }
+    
+    p {
+        font-size: 17px;
+        color: #fff;
+        padding:4px 10px;
+        text-transform: uppercase;
+        line-height: 20px;
+        display: inline-block;		
+        margin: 0px;
+        @include breakpoint(small) {
+            font-size: 15px;
+            line-height: 15px;
+        }
+        @media (max-width:546px) {
+            border-top:dashed 1px #fff;
+            border-bottom:dashed 1px #fff;
+        }
+    }
+}
+}
+.signup_today_sec {
+	max-width:845px;
+    margin:30px auto;
+  	h3 {
+		font-size: 29px;
+		float: left;
+		width: 100%;
+		text-transform: uppercase;
+		font-weight: 800;
+        color: $base-color-2;
+        margin-bottom: 50px;    
+		@include breakpoint(small) {
+			font-size: 20px;
+		}
+	}
+	.signup_today_reason {
+		padding:50px 17px;
+		@include breakpoint(small) {
+			padding:30px 17px;
+		}
+		.comn_round_icons {
+			width: 75px;
+			height: 75px;
+			background-repeat:no-repeat;
+			background-position: center center;
+			display: inline-block;
+			&.creation_icon {
+				background-image:url('assets/images/price_icon1.png');
+				@include image-2x("assets/images/price_icon1@2x.png", 75px, 75px);				
+			}
+			&.analysis_icon {
+				background-image:url('assets/images/price_icon2.png');
+				@include image-2x("assets/images/price_icon2@2x.png", 75px, 75px);				
+			}
+			&.reporting_icon {
+				background-image:url('assets/images/price_icon3.png');
+				@include image-2x("assets/images/price_icon3@2x.png", 75px, 75px);				
+			}
+		}
+		em {
+			font-size: 21px;
+			color: $base-color-2;
+			float: left;
+			width: 100%;
+			@include breakpoint(small) {
+				font-size: 16px;
+			}
+			b {
+				border-bottom:solid 1px $base-color-2;
+				font-style: normal;
+			}
+		}
+	}
+}

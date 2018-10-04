@@ -1,0 +1,240 @@
+	<!-- /.page_content -->
+
+  <!-- <app-header-user></app-header-user> -->
+	<section class="container-fluid friends_page page_content user_module">
+      <div class="row">
+        <div class="module_wrap">				
+          <div class="left_body">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content_wrap">
+              <div class="row">
+                <app-user-header></app-user-header>
+  						<div class="col-xs-12 page_header">
+                  <div class="row">
+                    <div class="container">
+                      <div class="table_div">
+                        <div class="tbl_cell left-sec">
+                          <h2>Settings</h2>
+                          <p>Creatively crafted Dashboard for your needs</p>
+                        </div>
+                        <!-- <div class="tbl_cell right-sec">
+                          <button type="button" class="btn comn-btn pull-right" onclick="goBack()">Back</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>								
+                </div>
+                <!-- /.page_header -->
+  
+                <div class="col-xs-12 page_body">
+                  <div class="row">
+                    <div class="container">
+                      <div class="row">
+                        <div class="setting-module profile_stng col-xs-12 col-md-6">
+                          <div class="data_wrap">
+                            <div id="profile_info"  *ngIf="!showProfiles">
+                              <h2 class="title">My Profile</h2>
+                              <div class="col-xs-12 noPadd">
+                                <span class="prof_dp" style="background-image: url('assets/images/profile-dp.jpg');"></span>
+                                <div class="profl-dtl">
+                                  <h3>Demon Salvatore, <span class="sex">Male</span></h3>
+                                  <ul class="contct-info">
+                                    <li class="mail"><a href="mailto:demonsalvatore@gmail.com?subject=feedback">demonsalvatore@gmail.com</a></li>
+                                    <li class="phone"><a href="tel:+919876543210">+91-9876543210</a></li>
+                                  </ul>
+                                  <button id="edit_profbtn" type="button" class="comn-btn btn" (click)="showProfile()">Edit Profile</button>
+                                </div>
+                              </div>														
+                            </div>
+                            <!-- /#profile_info -->
+                            <div id="profile_edit" class="edit_wrapper" *ngIf="showProfiles">
+                              <h2 class="title">Edit Profile</h2>
+                              <button type="button" class="close_edit btn pull-right" (click)="closeMe()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                              <div class="col-xs-12 noPadd">
+                                <div class="left_ele">
+                                  <span class="prof_dp" style="background-image: url('assets/images/profile-dp.jpg');"></span>
+                                  <span class="brws_btn"><input type="file">Upload Image</span>
+                                </div>
+  
+                                <div class="profl-dtl">
+                                  <form class="profile_form comn-form">
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <label class="label">Name</label>
+                                              <input name="name" placeholder="" value="Demon Salvatore" type="text">
+                                            </fieldset>
+                                        </div>
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <label class="label">Gender</label>
+                                                  <div class="my-radio">
+                                                    <span class="radioBox">
+                                                      <input id="genradio1" name="gender" type="radio">
+                                                      <label for="genradio1"></label>
+                                                    </span>
+                                                    <label class="lbl" for="genradio1">Male</label>    
+                                                  </div>
+                                                  <!-- /.my-radio -->
+                                                  <div class="my-radio">
+                                                    <span class="radioBox">
+                                                      <input id="genradio2" name="gender" type="radio">
+                                                      <label for="genradio2"></label>
+                                                    </span>
+                                                    <label class="lbl" for="genradio2">Female</label>    
+                                                  </div>
+                                                  <!-- /.my-radio -->
+                                                  <div class="my-radio">
+                                                    <span class="radioBox">
+                                                      <input id="genradio3" name="gender" type="radio">
+                                                      <label for="genradio3"></label>
+                                                    </span>
+                                                    <label class="lbl" for="genradio3">Rather not say</label>    
+                                                  </div>
+                                                  <!-- /.my-radio -->
+                                            </fieldset>
+                                        </div>
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <label class="label">Username</label>
+                                              <input name="username" placeholder="" value="Maxartkiller" type="text">
+                                            </fieldset>
+                                        </div>
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <label class="label">Email</label>
+                                              <input type="email" name="email" placeholder="abc@example.com" value="demonsalvatore@gmail.com">
+                                            </fieldset>
+                                        </div>
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <label class="label">Phone</label>
+                                        <div class="table_div phone_input">
+                                          <div class="tbl_cell">
+                                              <div class="btn-group" dropdown>
+                                                  <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle"
+                                                          aria-controls="dropdown-basic">
+                                                           +91 <span class="caret"></span>
+                                                  </button>
+                                                  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                                                      role="menu" aria-labelledby="button-basic">
+                                                    <li role="menuitem"><a class="dropdown-item" href="#">+91</a></li>
+                                                    <li role="menuitem"><a class="dropdown-item" href="#">+92</a></li>
+                                                    <li role="menuitem"><a class="dropdown-item" href="#">+93</a></li>
+                                                    <li role="menuitem"><a class="dropdown-item" href="#">+94</a></li>
+                                                    <li role="menuitem"><a class="dropdown-item" href="#">+95</a></li>
+                                                  </ul>
+                                                </div>	
+                                           </div>
+                                          <div class="tbl_cell">
+                                            <input class="form-control" value="9876543210" placeholder="" type="text">
+                                          </div>
+                                        </div>
+                                            </fieldset>
+                                        </div>
+                                    <div class="row">
+                                            <fieldset class="form-group">
+                                              <div class="btn-grup">
+                                                <button type="button" class="comn-btn btn close_edit" (click)="closeMe()">Cancel</button>
+                                          <button type="submit" class="comn-btn blubtn btn">Create</button>
+                                              </div>
+                                            </fieldset>
+                                        </div>
+                                  </form>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!-- /#profile_edit -->
+                          </div>
+                          <!-- /.data_wrap -->
+                        </div>
+                        <div class="setting-module acc_stng col-xs-12 col-md-6">
+                          <div class="data_wrap">
+                            <h2 class="title">Account Settings</h2>
+                            <form class="comn-form changPass_form">
+                              <div class="row">
+                                <label class="lbl">Changes Password</label>
+                                      <fieldset class="form-group width-50">
+                                        <input type="password" placeholder="New Password" required>
+                                      </fieldset>
+                                      <fieldset class="form-group width-50">
+                                        <input type="password" placeholder="Confirm Password" required>
+                                      </fieldset>
+                                  </div>
+                              <div class="row">
+                                      <fieldset class="form-group">
+                                        <div class="btn-grup">
+                                    <button type="submit" class="comn-btn blubtn btn btn-default">Update</button>
+                                        </div>
+                                      </fieldset>
+                                  </div>
+                            </form>
+  
+                            <form class="comn-form emailnoti-form">
+                              <div class="row">
+                                <div class="decision_toggle custom_toggle">
+                                        <input id="d" type="checkbox">
+                                        <label for="d">
+                                          <div class="toggle__switch" data-checked="Yes" data-unchecked="No"></div>
+                                        </label>
+                                      </div>
+                                  </div>
+                              <div class="row">
+                                <label class="lbl">Email Notifications</label>
+                                      <ul id="email_optns" class="options-list">
+                                          <li class="chk-option">					                			
+                                                <span class="checkBox">
+                                                  <input id="check_a1" type="checkbox" >
+                                                  <label for="check_a1"></label>
+                                                </span>
+                                                <label for="check_a1">View your Profile</label>
+                                          </li>
+                                          <li class="chk-option">					                			
+                                                <span class="checkBox">
+                                                  <input id="check_a2" type="checkbox">
+                                                  <label for="check_a2"></label>
+                                                </span>
+                                                <label for="check_a2">View your wishlist</label>
+                                          </li>
+                                          <li class="chk-option">					                			
+                                                <span class="checkBox">
+                                                  <input id="check_a3" type="checkbox">
+                                                  <label for="check_a3"></label>
+                                                </span>
+                                                <label for="check_a3">Sent you an invite for friendship</label>	
+                                          </li>
+                                        </ul>
+                                  </div>
+                              <div class="row">
+                                      <fieldset class="form-group">
+                                        <div class="btn-grup">
+                                    <button type="submit" class="comn-btn blubtn pull-right">Save</button>
+                                        </div>
+                                      </fieldset>
+                                  </div>
+                            </form>
+                          </div>
+                          <!-- /.data_wrap -->												
+                        </div>									
+                      </div>
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                </div>
+                <!-- /.page_body -->
+  
+              </div>							
+            </div>
+            <!-- /.content_wrap -->
+          </div>
+          <!-- ========= /.left_body ends ========= -->
+          <app-sidebar></app-sidebar>
+          <!-- ========= /.rightbar ends ========= -->			
+        </div>
+        <!-- /.module_wrap -->
+      </div>		
+    </section> 
+    <!-- /.page_content -->
+
+    	<!-- /.page_content -->
+
+<!-- <app-footer></app-footer> -->

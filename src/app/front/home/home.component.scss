@@ -1,0 +1,103 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+
+
+/* landing_page style start */
+.landing_page {
+	background-image:url('../../../assets/images/home_bg.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	min-height:calc(100vh - 131px);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	@include breakpoint(x-small) {
+		min-height:calc(100vh - 117px);
+	}
+	.landing_content {
+		text-align: center;
+		padding:60px 0;
+		@include breakpoint(small) {
+			width: 100%;
+		}
+		img {
+			margin:50px 0px;
+		}
+		h3 {
+			font-size: 40px;
+			font-weight: 400;
+			@include breakpoint(xxxlarge) {
+				font-size: 35px;
+			}
+			@include breakpoint(xxlarge) {
+				font-size: 30px;
+			}
+			@include breakpoint(xlarge) {
+				font-size: 25px;
+			}
+			@include breakpoint(medium) {
+				font-size: 22px;
+			}
+			@include breakpoint(small) {
+				font-size: 20px;
+			}
+			@include breakpoint(x-small) {
+				font-size: 17px;
+			}
+			@media (max-width:414px) {
+				font-size: 15px;
+			}
+		}
+		h2 {
+			font-size: 66px;
+			font-weight: 700;	
+			@include breakpoint(xxxlarge) {
+				font-size: 58px;
+			}
+			@include breakpoint(xxlarge) {
+				font-size: 50px;
+			}
+			@include breakpoint(xlarge) {
+				font-size: 45px;
+			}
+			@include breakpoint(medium) {
+				font-size: 40px;
+			}
+			@include breakpoint(small) {
+				font-size: 30px;
+			}
+			@include breakpoint(x-small) {
+				font-size: 25px;
+			}
+			@media (max-width:414px) {
+				font-size: 20px;
+			}
+		}
+		.tell_more_sec {
+			.tell_btn {
+				font-size: 25px;
+				font-weight: 500;
+				padding:10px 20px;
+				@include breakpoint(xxxlarge) {
+					font-size: 20px;
+				}
+				@include breakpoint(xxlarge) {
+					font-size: 18px;
+					padding:8px 16px;
+				}
+				@include breakpoint(xlarge) {
+					font-size: 16px;
+					padding:6px 14px;
+				}
+				@include breakpoint(small) {
+					font-size: 15px;
+					padding:6px 14px;
+				}
+			}
+		}
+	}
+}
+/* landing_page style end */
+

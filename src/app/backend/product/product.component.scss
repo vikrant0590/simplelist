@@ -1,0 +1,110 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+.product-list {
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    & > li {
+        display: inline-block;
+        float: left;
+        padding: 0 15px;
+        position: relative;
+        width: 20%;
+    }
+}
+.btn-group {
+    width: 100%;
+    & > select {
+        left: 100%;
+	}
+	&:after{
+		display: none !important;
+	}
+    .btn-default {
+		height: 34px;
+		width: 100%;
+		text-align: left;
+        border-radius:3px;
+        background:$white;
+        border: solid 1px #ddd;
+        padding-right:33px;
+        box-shadow: none;
+		transition: all ease 0.5s;
+	
+        &:hover, &:focus, &:active {
+            border: solid 1px $base-color;
+            transition: all ease 0.5s;
+            .caret {
+                border-top: 4px dashed $base-color;
+                transition: all ease 0.5s;
+            }
+        }
+        @media (max-width: 480px) {
+            height: 35px;
+            font-size:13px;
+        }
+        .caret {
+            display: inline-block;
+            border-left: 4px solid rgba(0, 0, 0, 0);
+            border-right: 4px solid rgba(0, 0, 0, 0);
+            border-top: 4px dashed;
+			border-bottom: 0;
+			position: absolute;
+			top:15px;
+			right: 10px;
+        }
+    }
+    .dropdown-menu {
+        padding: 0px;
+        /* top:101%; */
+        li {
+            a {
+                border-bottom: 1px solid rgb(221, 221, 221);
+                padding: 8px 15px;
+                white-space: nowrap;
+                transition: all ease 0.5s;                
+                &:hover, &:focus, &:active {
+                    transition: all ease 0.5s;
+                }
+                .text {
+                    white-space: normal;
+                }
+                @media (max-width: 480px) {
+                    font-size:13px;
+                    padding: 8px 15px;
+                }
+            }
+        }
+    }
+    &.open {
+        .btn-default {
+            background-color: $white;
+            border: solid 1px $base-color;
+            color: rgb(51, 51, 51);
+            outline: none;
+            transition: all ease 0.5s;
+            .caret {
+                display: inline-block;
+                transition: all ease 0.5s;
+            }
+        }
+
+    }
+    .dropdown-menu {
+        width:100% !important;
+        top: 36px;
+    }
+}    
+.page_navigation{
+    margin-bottom: 60px;
+    @include breakpoint(medium) {
+        margin-bottom: 0;
+    }
+    ul{
+        text-align: right;
+    }
+}

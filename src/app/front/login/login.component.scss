@@ -1,0 +1,474 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+/* landing_page style start */
+.landing_page {
+	background-image:url('../../../assets/images/home_bg.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	min-height:calc(100vh - 131px);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	@include breakpoint(x-small) {
+		min-height:calc(100vh - 117px);
+	}
+	.landing_content {
+		text-align: center;
+		padding:60px 0;
+		@include breakpoint(small) {
+			width: 100%;
+		}
+		img {
+			margin:50px 0px;
+		}
+		h3 {
+			font-size: 40px;
+			font-weight: 400;
+			@include breakpoint(xxxlarge) {
+				font-size: 35px;
+			}
+			@include breakpoint(xxlarge) {
+				font-size: 30px;
+			}
+			@include breakpoint(xlarge) {
+				font-size: 25px;
+			}
+			@include breakpoint(medium) {
+				font-size: 22px;
+			}
+			@include breakpoint(small) {
+				font-size: 20px;
+			}
+			@include breakpoint(x-small) {
+				font-size: 17px;
+			}
+			@media (max-width:414px) {
+				font-size: 15px;
+			}
+		}
+		h2 {
+			font-size: 66px;
+			font-weight: 700;	
+			@include breakpoint(xxxlarge) {
+				font-size: 58px;
+			}
+			@include breakpoint(xxlarge) {
+				font-size: 50px;
+			}
+			@include breakpoint(xlarge) {
+				font-size: 45px;
+			}
+			@include breakpoint(medium) {
+				font-size: 40px;
+			}
+			@include breakpoint(small) {
+				font-size: 30px;
+			}
+			@include breakpoint(x-small) {
+				font-size: 25px;
+			}
+			@media (max-width:414px) {
+				font-size: 20px;
+			}
+		}
+		
+	}
+}
+
+.login_body {
+	padding:0px;
+	.landing_page {
+		height: 100vh;
+		padding:0px;
+		@include breakpoint(xlarge) {
+			height: auto;
+		}
+		.landing_content {
+		    padding: 45px 0;
+		    .login_logo_sec {
+		    	text-align: center;
+		    	margin-bottom: 80px;
+		    	@include breakpoint(xxxlarge) {
+		    		margin-bottom: 0px;
+		    	}
+		    	.login_logo {
+		    		background-image: url("../../../assets/images/login_logo.png");
+				    background-position: center center;
+				    background-repeat: no-repeat;
+				    width: 505px;
+				    height: 130px;
+				    margin: 0px auto;
+				    float: none;
+				    display: inline-block;
+				    background-size: 100%;
+				    @include breakpoint(xxxlarge) {
+				    	background-size: 70%;
+				    }
+				    @include breakpoint(small) {
+				    	width: 50%;
+				    }
+				    @include breakpoint(x-small) {
+				    	background-size: 50%;
+				    	width: 100%;
+				    }				    
+		    	}
+		    }
+		    h3 {
+				font-size: 30px;
+				font-weight: 400;
+				@include breakpoint(xxxlarge) {
+					font-size: 22px;
+				}
+				@include breakpoint(xxlarge) {
+					font-size: 20px;
+				}
+				@include breakpoint(xlarge) {
+					font-size: 18px;
+				}
+				@include breakpoint(medium) {
+					font-size: 16px;
+				}
+				@include breakpoint(small) {
+					font-size: 15px;
+				}
+				@include breakpoint(x-small) {
+					font-size: 14px;
+				}
+			}
+			h2 {
+				font-size: 40px;
+				font-weight: 700;	
+				@include breakpoint(xxxlarge) {
+					font-size: 35px;
+				}
+				@include breakpoint(xxlarge) {
+					font-size: 32px;
+				}
+				@include breakpoint(xlarge) {
+					font-size: 30px;
+				}
+				@include breakpoint(medium) {
+					font-size: 28px;
+				}
+				@include breakpoint(small) {
+					font-size: 25px;
+				}
+				@include breakpoint(x-small) {
+					font-size: 20px;
+				}
+				@media (max-width:414px) {
+					font-size: 18px;
+				}
+			}
+		}
+		.login_page_content {
+			.login_page_content_left {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    height: 100vh;
+			    @include breakpoint(xlarge) {
+					padding-bottom: 50px;
+				}
+				@include breakpoint(small) {
+			    	height: auto;
+			    }
+			}
+			.login_page_content_right {
+				background-color:$white;
+				position:relative;
+				padding:30px;
+				height: 100vh;
+				@include box-shadow(0px 0px 8px 0px rgba(0, 0, 0, 0.15));
+				@include breakpoint(xxxlarge) {
+					padding:20px;
+				}
+				@include breakpoint(xxlarge) {
+					padding:15px;
+				}
+				@include breakpoint(xlarge) {
+					height: auto;
+					/* position:absolute; */
+					bottom:0px;
+					padding:30px 15px;
+				}
+				.login_nav {
+					ul {
+						text-align: right;
+						@include breakpoint(xlarge) {
+							text-align: center;
+						}
+						li {
+							display: inline-block;
+							margin-left: 10px;
+							&:first-child {
+								margin-left: 0px;
+							}							
+							a {
+								text-decoration: none;
+								&.needHelp {
+									color: $text-color;
+									&:hover, &:focus, &:active {
+										color: $base-color;
+									}
+								}								
+							}
+						}
+					}
+				}
+				.login_footer {
+					position:absolute;
+					bottom:0;
+					right: 0;
+					@include breakpoint(xlarge) {
+					    right: auto;
+					    left: 0;
+					    width: auto;
+					    margin: 0px auto;
+					    float: none;
+					    width: 100%;
+					    position: absolute;
+					    text-align: center;
+					    bottom: 0;
+					}
+					ul {
+						li {
+							display: inline-block;
+							&:last-child {
+								a {
+									&:after {
+										background-color: rgba(0,0,0,0);	
+										right: 0;
+									}
+								}
+							}
+							a {
+								color: $text-color;
+								font-size: 14px;
+								display: inline-block;
+								padding:10px;
+								text-decoration: none;
+								position:relative;
+								&:after {
+									position:absolute;
+									right: -3px;
+									background-color: $text-color;
+									content: '';
+									width: 1px;
+									height: 14px;
+									top: 50%;
+									@include transform(translateY(-50%));
+								}
+								&:hover, &:focus, &:active {
+									color: $base-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.Sign_in_sec {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	max-width:300px;
+	width: 50%;
+	@include breakpoint(xxxlarge) {
+		margin-top:150px;
+	}
+	@include breakpoint(xxlarge) {
+		margin-top:100px;
+	}
+	@include breakpoint(xlarge) {
+		margin:50px auto;
+		text-align: center;		
+	}
+	@include breakpoint(x-small) {
+		max-width: 100%;
+	}
+	&#Register {
+		display: none;
+		margin-top: 100px;
+		@media (max-width:1368px) {
+			margin-top:0px;
+		}
+		@include breakpoint(xlarge) {
+			margin:50px auto;
+			text-align: center;		
+		}
+	}
+	h2 {
+		color: $heading-color-2;
+		font-size: 30px;
+		font-weight: 600;
+		@include breakpoint(xxxlarge) {
+			font-size: 25px;
+		}
+		@include breakpoint(xxlarge) {
+			font-size: 20px;
+		}
+	}
+	.sign_in_flds {
+		margin:30px 0;
+		@include breakpoint(xxxlarge) {
+			margin:20px 0;
+		}
+		@include breakpoint(xxlarge) {
+			margin:10px 0;
+		}
+		.form_row {
+			margin-bottom: 20px;
+			@include breakpoint(xxxlarge) {
+				margin-bottom: 15px;
+			}
+			@include breakpoint(xxlarge) {
+				margin-bottom: 10px;
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			.btn-group {
+				position: relative;
+				&.active {
+					&:after {
+						background-color:$base-color;	
+					}	
+				}
+				&:after {
+					position:absolute;
+					content: '';
+					background-color:#d0d0d0;
+					width: 1px;
+					height: 100%;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+				.input_fld {
+					width: 50%;
+					float: left;
+					&:first-child {
+						border-top-right-radius:0;
+						border-bottom-right-radius:0;
+						border-right:none;
+					}
+					&:last-child {
+						border-top-left-radius:0;
+						border-bottom-left-radius:0;
+						border-left:none;
+					}
+				}	
+			}
+			p {
+				color: $text-color;
+				font-size: 14px;
+				span {
+					a {
+						&.termsLinks {
+							color:$base-color;
+							text-decoration: none;
+							&:hover, &:focus, &:active {
+								color:$base-color-2;
+							}
+						}
+					}
+				}				
+			}
+			.selectGender {
+				li {
+					display: inline-block;
+					margin-right:15px;
+					margin-bottom: 10px;
+					&:last-child {
+						margin-right:0px;
+					}
+				}
+			}
+			.rememberMe {
+				display: table;
+				width: 100%;
+				.checkbx_sec {
+					display: table-cell;
+					vertical-align: top;
+					float: none;
+					width: 20px;
+					.my-check {
+						.checkBox {
+							top: 3px;
+							transform: none;
+						}
+					}
+				}
+				.rememberMeInfo {
+					display: table-cell;
+					vertical-align: top;
+					float: none;
+					width: 100%;	
+				}
+			}
+			.input_fld {
+				border:solid 1px #ddd;
+				border-radius:3px;
+				padding:0px 15px;
+				width: 100%;
+				font-size: 13px;
+				height: 34px;
+				@include transition(all 0.4s ease 0s);
+				&:hover, &:focus, &:active {
+					border:solid 1px $base-color;
+					@include transition(all 0.4s ease 0s);
+				}
+			}
+		}
+	}
+	.signInButtnSec {
+		.signIn {
+			border-radius:100px;
+			padding:10px 80px;
+		}
+	}
+	.forgot_sec {
+		margin-top: 40px;
+		@include breakpoint(xxxlarge) {
+			margin-top: 30px;
+		}
+		@include breakpoint(xxlarge) {
+			margin-top: 20px;
+		}
+		.forgotyourpass {
+			color: $text-color;
+			font-size: 14px;
+			display: inline-block;
+			padding:10px;
+			text-decoration: none;
+			&:hover, &:focus, &:active {
+				color: $base-color;
+			}				
+		}
+		p {
+			color: $text-color;
+			b {
+				color: $black-color;
+				a {
+					color: $black-color;
+					text-decoration: none;
+					&:hover, &:focus, &:active {
+						color:$base-color;
+					}
+					&.termsLinks {
+						color:$base-color;
+						text-decoration: none;
+						&:hover, &:focus, &:active {
+							color:$base-color-2;
+						}
+					}
+				}
+			}
+		}			
+	}
+}

@@ -1,0 +1,318 @@
+<div id="right_Bar" [ngClass]="isSidebar ? 'rightbar show':'rightbar'">
+    <button id="bartoggle" (click)="sidebtn()" type="button" class="bar_toggle"><span></span></button>
+    <div class="col-xs-12 content_wrap">
+      <div class="row">
+        <div class="sidebar_block empty_block">
+          <span class="addgifwrap">
+            <img src="assets/images/cartoon-img-add.png" alt="Image">
+            <ng-template #popTemplate1 class="popover comonPopover friends_popover">
+                <div class="popovr_header">
+                    <h2>Create Wish List</h2>
+                        <button type="button" class="close_pop btn pull-right" (click)="pop10.hide()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  </div>
+                  <form class="wishlist_form comn-form">
+                    <div class=row>
+                            <fieldset class="form-group">
+                              <input type="text" name="title" placeholder="Wishlist Title" required>
+                            </fieldset>
+                        </div>
+                    <div class=row>
+                            <fieldset class="form-group">
+                              <textarea name="description" placeholder="Description"></textarea>
+                            </fieldset>
+                        </div>
+                    <div class=row>
+                            <fieldset class="form-group">
+                              <label class="label flex-lbl">Accessibility</label>
+                                  <div class="my-radio">
+                                    <span class="radioBox">
+                                      <input type="radio" id="radio1" name="accessibility">
+                                      <label for="radio1"></label>
+                                    </span>
+                                    <label class="lbl" for="radio1">Private</label>    
+                                  </div>
+                                  <!-- /.my-radio -->
+                                  <div class="my-radio">
+                                    <span class="radioBox">
+                                      <input type="radio" id="radio2" name="accessibility">
+                                      <label for="radio2"></label>
+                                    </span>
+                                    <label class="lbl" for="radio2">Public</label>    
+                                  </div>
+                                  <!-- /.my-radio -->
+                            </fieldset>
+                        </div>
+                    <div class=row>
+                            <fieldset class="form-group">
+                              <div class="btn-grup">
+                                <!-- <button type="button" class="comn-btn btn btn-default close_pop" onclick="$(&quot;.wishPop_trig&quot;).popover(&quot;hide&quot;);">Cancel</button> -->
+                                <button type="button" (click)="pop10.hide()" class="comn-btn btn btn-default close_pop">Cancel</button>
+                          <button type="submit" class="comn-btn blubtn btn btn-default">Create</button>
+                              </div>
+                            </fieldset>
+                        </div>
+                  </form>
+            </ng-template>
+         <button [popover]="popTemplate1" #pop10="bs-popover" placement="bottom" class="addGif_btn wishPop_trig" href="javascript:void(0)">Add</button>
+          </span>
+          <div class="col-xs-12 block_header">
+            <h1>My Current WishLists</h1>
+            <button id="addList-btn" type="type" class="add-btn wishPop_trig">Add</button>
+          </div>
+          <div class="col-xs-12 noPadd block_body">
+            <div class="custom_scroll">
+              <ul>
+                <li class="frnds-suggestion">
+                  <a class="active" id="frndssug_Trig" (click)="suggest()">Suggested By My Friends <span class="numb">4</span></a>
+                </li>
+                <li>
+                  <a class="frnd_sugg_trig" (click)="sclist()">Kimani Back to School</a>
+                </li>
+                <li>
+                  <a class="frnd_sugg_trig" (click)="sclist()">Nya Back to School</a>
+                </li>
+                <li>
+                  <a class="frnd_sugg_trig" (click)="sclist()">July 2017 BBQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>								
+        </div>
+        <!-- /.sidebar_block -->
+        <div class="sidebar_block">
+          <div class="col-xs-12 block_header">
+            <h1>My Friends List</h1>
+          </div>								
+          <div class="custom_scroll">
+            <ul>
+              <li>
+                <a class="frnd_sugg_trig" (click)="sclist()">George Wedding Shower</a>
+              </li>
+              <li>
+                <a class="frnd_sugg_trig" (click)="sclist()">Milka House Warming</a>
+              </li>
+            </ul>
+          </div>								
+        </div>
+        <!-- /.sidebar_block -->
+      </div>							
+    </div>
+    <!-- .content_wrap -->
+
+    <div id="frndz_list" [ngClass]="isSuggestion ? 'list-detail open':'list-detail'">
+      <div class="col-xs-12 detail_data noPadd">
+        <div class="col-xs-12 header">
+          <button type="button" (click)="suggest()" class="btn btn-back"><span>Suggested By Friends</span></button>
+        </div>
+        <div class="col-xs-12 list_data">
+          <div class="custom_scroll">
+            <div class="list_item">
+              <h3>Suggestion From <span>Demon</span></h3>
+              <div class="col-xs-12 noPadd">
+                <div class="imgdiv">
+                  <p class="saleBadge">
+                    <span><b class="off-lbl">58%</b> off</span>
+                  </p>											
+                  <span class="img-wrap">
+                    <img src="assets/images/products/fs-01.png" alt="image">
+                  </span>
+                </div>
+                <p class="prdct-name">Operon BP 360A Aster Bp Monitor</p>
+                <p class="off_price">Offer price: <b>$34.00</b></p>
+              </div>
+              <div class="sellbtn-grup">
+                <button class="btn comn-btn blubtn" type="button">Add to List</button>
+                <button class="btn comn-btn greenbtn" type="button">Purchase</button>
+              </div>
+              <ul class="send-links">
+                <li><button class="btn" type="button">Suggest to Friend</button></li>
+                <li><button class="btn lightbtn" type="button">No Thanks</button></li>
+              </ul>
+            </div>
+            <!-- /.list_item -->
+            <div class="list_item">
+              <h3>Suggestion From <span>Caroline</span></h3>
+              <div class="col-xs-12 noPadd">
+                <div class="imgdiv">
+                  <p class="saleBadge">
+                    <span><b class="off-lbl">58%</b> off</span>
+                  </p>											
+                  <span class="img-wrap">
+                    <img src="assets/images/products/fs-02.png" alt="image">
+                  </span>
+                </div>
+                <p class="prdct-name">Zara Branded Top Wear</p>
+                <p class="off_price">Offer price: <b>$34.00</b></p>
+              </div>
+              <div class="sellbtn-grup">
+                <button class="btn comn-btn blubtn" type="button">Add to List</button>
+                <button class="btn comn-btn greenbtn" type="button">Purchase</button>
+              </div>
+              <ul class="send-links">
+                <li><button class="btn" type="button">Suggest to Friend</button></li>
+                <li><button class="btn lightbtn" type="button">No Thanks</button></li>
+              </ul>
+            </div>
+            <!-- /.list_item -->
+            <div class="list_item">
+              <h3>Suggestion From <span>Jay</span></h3>
+              <div class="col-xs-12 noPadd">
+                <div class="imgdiv">
+                  <p class="saleBadge">
+                    <span><b class="off-lbl">58%</b> off</span>
+                  </p>											
+                  <span class="img-wrap">
+                    <img src="assets/images/products/fs-02.png" alt="image">
+                  </span>
+                </div>
+                <p class="prdct-name">Knight rider cricket halmet</p>
+                <p class="off_price">Offer price: <b>$34.00</b></p>
+              </div>
+              <div class="sellbtn-grup">
+                <button class="btn comn-btn blubtn" type="button">Add to List</button>
+                <button class="btn comn-btn greenbtn" type="button">Purchase</button>
+              </div>
+              <ul class="send-links">
+                <li><button class="btn" type="button">Suggest to Friend</button></li>
+                <li><button class="btn lightbtn" type="button">No Thanks</button></li>
+              </ul>
+            </div>
+            <!-- /.list_item -->
+            <div class="list_item">
+              <h3>Suggestion From <span>Taylor</span></h3>
+              <div class="col-xs-12 noPadd">
+                <div class="imgdiv">
+                  <p class="saleBadge">
+                    <span><b class="off-lbl">58%</b> off</span>
+                  </p>											
+                  <span class="img-wrap">
+                    <img src="assets/images/products/fs-02.png" alt="image">
+                  </span>
+                </div>
+                <p class="prdct-name">DivineCrafts Analog Wall Clock</p>
+                <p class="off_price">Offer price: <b>$34.00</b></p>
+              </div>
+              <div class="sellbtn-grup">
+                <button class="btn comn-btn blubtn" type="button">Add to List</button>
+                <button class="btn comn-btn greenbtn" type="button">Purchase</button>
+              </div>
+              <ul class="send-links">
+                <li><button class="btn" type="button">Suggest to Friend</button></li>
+                <li><button class="btn lightbtn" type="button">No Thanks</button></li>
+              </ul>
+            </div>
+            <!-- /.list_item -->
+          </div>
+        </div>
+      </div>
+      <!-- /.detail_data -->
+    </div>
+    <!-- === /#frndz_list.list-detail === -->
+
+    <div id="Indfrnd_list" [ngClass]="isSchoolList ? 'list-detail open':'list-detail'">
+      <div class="col-xs-12 detail_data noPadd">
+        <div class="col-xs-12 header">
+          <button type="button" (click)="sclist()" class="btn btn-back"><span>Kimani Back to School</span></button>
+        </div>
+        <div class="col-xs-12 list_data">
+          <div class="custom_scroll">
+            <div id="user_sugg_carousel" class="carousel cusCarousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+            <carousel>
+               <slide>
+                <div class="item active">
+                  <div class="col-xs-12 prdct-list noPadd">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-05.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-06.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-07.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-08.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-09.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-10.png" alt="Image"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </slide>
+                <!-- /.item -->
+              <slide>
+                <div class="item">
+                  <div class="col-xs-12 prdct-list noPadd">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-08.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-09.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-07.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-06.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-10.png" alt="Image"></span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">
+                        <span class="img-wrap"><img src="assets/images/products/fs-05.png" alt="Image"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </slide>
+                <!-- /.item -->
+              </carousel>
+              </div>
+            <!-- /.cusCarousel -->
+
+            <div class="col-xs-12 list-shared-with">
+              <div class="col-xs-12 header">
+                <h2>List Shared with</h2>
+                <button type="button" class="btn btn-back">back</button>
+              </div>
+              <div class="col-xs-12 user-list">
+                <ul>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp06.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp05.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp04.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp03.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp03.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp02.jpg');"></span>
+                  </li>
+                  <li>
+                    <span class="dp-wrap" style="background-image: url('assets/images/user-dp01.jpg');"></span>
+                  </li>
+                </ul>
+              </div>										
+            </div>
+          </div>
+          <!-- /.custom_scroll -->
+        </div>
+      </div>
+      <!-- /.detail_data -->
+    </div>
+    <!-- === /#Indfrnd_list.list-detail === -->
+  </div>  

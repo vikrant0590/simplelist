@@ -1,0 +1,1073 @@
+	<!-- /.page_content -->
+<!-- temp -->
+  <!-- <app-header-user></app-header-user> -->
+	<section class="container-fluid friends_page page_content user_module">
+      <div class="row">
+        <div class="module_wrap">				
+          <div class="left_body">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content_wrap">
+              <div class="row">
+  
+                <app-user-header></app-user-header>
+                <div class="col-xs-12 page_header">
+                  <div class="row">
+                    <div class="container">
+                      <div class="table_div">
+                        <div class="tbl_cell left-sec">
+                          <h2>My Friends </h2>
+                          <p>Creatively crafted Dashboard for your needs</p>
+                        </div>
+                        <div class="tbl_cell right-sec">
+                          <!-- <button type="button" class="btn comn-btn pull-right" onclick="goBack()">Back</button> -->
+                          <a role="button" href="javascript:void(0)" class="btn comn-btn pull-right">Back</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>								
+                </div>
+                <!-- /.page_header -->
+  
+                <div class="col-xs-12 page_body">
+                  <div class="row">
+                    <div class="container">
+  
+                      <!--Horizontal Tab-->
+                          <div id="PageHorizontalTab" class="page_HorizontalTab">
+                              <p-tabView>
+                                  <p-tabPanel header="My Friends">
+                                    <div class="page_tabs_container row">
+                                       <div class="hortab_header">
+                                        <div class="table_div">
+                                      <div class="tbl_cell left-sec">
+                                    <h2><b>26</b> Friends</h2>
+                                  </div>
+                                  <div class="tbl_cell right-sec">
+                                     
+                                      
+
+    <ng-template #popTemplate1 class="popover comonPopover friends_popover" >
+        <div class="popovr_header">
+            <h2>Invite Friends</h2>
+                <button type="button" class="close_pop btn pull-right" (click)='pop1.hide()' ><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+          <form class="wishlist_form comn-form">
+            <div class=row>
+                    <fieldset class="form-group">
+                      <div class="list_inputBox">
+                        <div class="tags">demonsalvator@gmail.com<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                        <div class="tags">jaycutler@gmail.com<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                        <div class="input_wrap">
+                          <input id="addfrnd_input" name="listname" placeholder="Enter email address" type="text">
+                        </div>
+                      </div>
+                      <!-- /.list_inputBox -->
+                    </fieldset>
+                </div>
+            <div class=row>
+                    <fieldset class="form-group">
+                      <div class="btn-grup">
+                        <button type="button" (click)='pop1.hide()' class="comn-btn btn btn-default close_pop" >Cancel</button>
+                        <button type="button" class="comn-btn blubtn btn btn-default">Create</button>
+                      </div>
+                    </fieldset>
+                </div>
+          </form>
+    </ng-template>
+ <button [popover]="popTemplate1" outsideClick="true" placement="bottom" #pop1="bs-popover" type="button" class="comn-btn create_btn invitefrn_popTrig" data-toggle="popover">Invite Friends</button>
+                                  </div>
+                                </div>
+                                      </div>
+                                      <!-- /.hortab_header -->
+    
+                                        <div class="friendslist_container">
+                                          <div class="row">
+                                            <ul class="frinds_list onethrd-list">
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-12.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Astha Smith</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">asthasmith@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-13.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Demon Salvatore</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">demonsalvatore@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-14.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Caroline Forbbs</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">carolineforbbs@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-15.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Taylor Lockwood</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">taylorlockwood@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-16.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Jay Cutler</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">jaycutler@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-17.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Catherine Brewster</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">catherinebrewster@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-12.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Astha Smith</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">asthasmith@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-13.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Demon Salvatore</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">demonsalvatore@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-14.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Caroline Forbbs</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">carolineforbbs@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-15.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Taylor Lockwood</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">taylorlockwood@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+    
+    
+                                              
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-17.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Catherine Brewster</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">catherinebrewster@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->					                    					
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-12.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Astha Smith</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">asthasmith@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-13.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Demon Salvatore</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">demonsalvatore@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->	
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-15.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Taylor Lockwood</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">taylorlockwood@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-14.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Caroline Forbbs</span>,<span class="gndr">Female</span></p>
+                                                  <span class="usermail">carolineforbbs@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                              <li>												                    						
+                                                <div class="profile_thumb">
+                                                  <div class="table_div">
+                                              <div class="tbl_cell">
+                                                <div class="userdp">											
+                                              <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-16.jpg');"></span>
+                                            </div>
+                                            <!-- /.userdp -->
+                                              </div>
+                                              <div class="tbl_cell">
+                                                <div class="user_detail">
+                                                  <p class="user-name"><span class="name">Jay Cutler</span>,<span class="gndr">Male</span></p>
+                                                  <span class="usermail">jaycutler@gmail.com</span>
+                                                  <div class="prof_actions">
+                                                <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                              </div>
+                                                </div>
+                                                <!-- /.user_detail -->
+                                              </div>
+                                            </div>
+                                                </div>
+                                                <!-- /.profile_thumb -->
+                                              </li>
+                                              <!-- ============== -->
+                                            </ul>
+                                            <!-- /.frinds_list -->
+                                          </div>
+                                        </div>
+                                        <!-- ========== /.friendslist_sec ends ========== -->
+                                    </div>
+                                  </p-tabPanel>
+                                  <p-tabPanel header="Friends Group">
+                                      
+                                  <div class="page_tabs_container row">
+  
+                                      <div class="hortab_header">
+                                        <div class="table_div">
+                                  <div class="tbl_cell left-sec">
+                                    <h2><b>7</b> Friends Group</h2>
+                                  </div>
+                                     <div class="tbl_cell right-sec">
+
+                                      
+                                      <ng-template #popTemplate2 class="popover comonPopover friends_popover">
+                                          <div class="popovr_header">
+                                              <h2>Create Friends Group</h2>
+                                                  <button type="button" class="close_pop btn pull-right" (click)="pop2.hide()" ><i class="fa fa-times" aria-hidden="true"></i></button>
+                                            </div>
+                                            <form class="wishlist_form comn-form">
+                                              <div class=row>
+                                                      <fieldset class="form-group">
+                                                        <input type="text" name="title" placeholder="Group Title" required>
+                                                      </fieldset>
+                                                  </div>
+                                              <div class=row>
+                                                      <fieldset class="form-group">
+                                                        <div class="list_inputBox">
+                                                          <div class="tags">Demon Salvatore<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                          <div class="tags">Bonnie Bannet<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                          <div class="tags">Jay Cutler<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                          <div class="input_wrap">
+                                                            <input id="addfrnd_input" name="listname" placeholder="Friend Name" type="text">
+                                                            <div class="inptsrch_results">
+                                                              <div id="srch_scroll" class="col-xs-12 panel_scroll srchresults_scroll noPadd">
+                                                                  <p-scrollPanel [style]="{width: '100%', height: '149px'}">
+                                                              <ul class="userList">
+                                                                  <li>
+                                                                    <a href="javascript:void(0)" class="userblock">	
+                                                                          <span class="username">Jay Cutler</span>
+                                                                        <span class="usermail">Jaycutler@gmail.com</span>					                				
+                                                                      </a>
+                                                                  </li>
+                                                                  <li>
+                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                          <span class="username">Bonnie Banner</span>
+                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                      </a>
+                                                                  </li>
+                                                                  <li>
+                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                          <span class="username">Bonnie Banner</span>
+                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                      </a>
+                                                                  </li>
+                                                                  <li>
+                                                                      <a href="javascript:void(0)" class="userblock">	
+                                                                            <span class="username">Jay Cutler</span>
+                                                                          <span class="usermail">Jaycutler@gmail.com</span>					                				
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                      <a href="javascript:void(0)" class="userblock">
+                                                                            <span class="username">Bonnie Banner</span>
+                                                                          <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                      <a href="javascript:void(0)" class="userblock">
+                                                                            <span class="username">Bonnie Banner</span>
+                                                                          <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                              </p-scrollPanel>
+                                                              </div>
+                                                          </div>
+                                                          </div>
+                                                          
+                                                        </div>
+                                                        <!-- /.list_inputBox -->
+                                                      </fieldset>
+                                                  </div>
+                                              <div class=row>
+                                                      <fieldset class="form-group">
+                                                        <div class="btn-grup">
+                                                          <!-- <button type="button" class="comn-btn btn btn-default close_pop" onclick="$(&quot;.wishPop_trig&quot;).popover(&quot;hide&quot;);">Cancel</button> -->
+                                                          <button type="button" class="comn-btn btn btn-default close_pop" (click)="pop2.hide()"  >Cancel</button>
+                                                    <button type="submit" class="comn-btn blubtn btn btn-default">Create</button>
+                                                        </div>
+                                                      </fieldset>
+                                                  </div>
+                                            </form>
+                                      </ng-template>
+                                                              
+                                      <button [popover]="popTemplate2" outsideClick="true" placement="bottom" #pop2="bs-popover" class="comn-btn create_btn crtfrngrup_popTrig" data-toggle="popover">Create Friends Group</button>
+                                  </div>
+                                </div>
+                                      </div>
+                                      <!-- /.hortab_header -->
+    
+                                        <div class="col-xs-12 inner_segregate">
+                                <div class="row">
+                                  <div class="segregate_wrapper">
+                                    <!--Vertical Tab-->
+                                        <div id="page_VerticalTabs" class="vertical_Tabs">
+
+
+                                            <p-tabView  orientation="left">
+                                                <p-tabPanel>
+                                                    <ng-template pTemplate="header">
+                                                        <span class="list_name">My School Friends</span>
+                                                        <span class="list_qunatity">10 Friends</span>
+                                                        <span class="list_date">Created on: <span>Jun 6th, 2017</span></span>
+                                                    </ng-template>
+                                                  <div class="right-Verticalcol">
+                                                    <div class="col-xs-12 right_content_wrap">
+                                                        <div class="resp-tabs-container ver_1">
+                                                          <!-- resp-tab-content-active -->
+                                                            <div class="tabPanel_body ">
+                                                                <div class="col-xs-12 wishlist_detail">
+                                                                  <div class="list_header table_div">
+                                                                    <div class="tbl_cell">
+                                                                      <div class="editable_block">
+                                                                        <a class="edit_trig_pencil" href="#"><span class="icon-pencil">edit</span></a>
+                                                                        <div data-toggle="manual" data-title="Enter List Title" class="editable wishlist_title">Singapour Adventure Friends</div>
+                                                                        </div>
+                                                                      <span class="list-date">Created on: Jun 6th, 2017</span>
+                                                                    </div>
+                                                                    <div class="tbl_cell header-right">
+                                                                      <span class="product_count"><b>10</b> Products</span>
+                                                                      <button type="button" class="icon-btn" (click)="openModal(template)">
+                                                                        <span class="ti-trash"></span>
+                                                                      </button>
+
+                                                                      
+
+                                                                    </div>
+                                                                  </div>
+                                                                  <!-- /.list_header -->
+              
+                                                                  <!-- /.shared_with_sec -->
+                                                                  <div class="col-xs-12 friends_sec">
+                                                                    <div class="sec-header">
+                                                                      <h2>Friends</h2>
+                                                                      <ng-template #popTemplate class="popover comonPopover friends_popover">
+                                                                          <div class="popovr_header">
+                                                                              <h2>Add friends to group</h2>
+                                                                                  <button type="button" class="close_pop btn pull-right" (click)="pop3.hide()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                                                            </div>
+                                                                            <form class="wishlist_form comn-form">
+                                                                              <div class=row>
+                                                                                      <fieldset class="form-group">
+                                                                                        <div class="list_inputBox">
+                                                                                          <div class="tags">Demon Salvatore<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                                                          <div class="tags">Bonnie Bannet<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                                                          <div class="tags">Jay Cutler<button type="button" class="dlt-btn"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+                                                                                          <div class="input_wrap">
+                                                                                            <input id="addfrnd_input" name="listname" placeholder="Friend Name" type="text">
+                                                                                            <div class="inptsrch_results">
+                                                                                              <div id="srch_scroll-2" class="col-xs-12 panel_scroll srchresults_scroll noPadd">
+                                                                                                  <p-scrollPanel [style]="{width: '100%', height: '149px'}">
+                                                                                              <ul class="userList">
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">	
+                                                                                                          <span class="username">Jay Cutler</span>
+                                                                                                        <span class="usermail">Jaycutler@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                                                          <span class="username">Bonnie Banner</span>
+                                                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                                                          <span class="username">Bonnie Banner</span>
+                                                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">	
+                                                                                                          <span class="username">Jay Cutler</span>
+                                                                                                        <span class="usermail">Jaycutler@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                                                          <span class="username">Bonnie Banner</span>
+                                                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                  <li>
+                                                                                                    <a href="javascript:void(0)" class="userblock">
+                                                                                                          <span class="username">Bonnie Banner</span>
+                                                                                                        <span class="usermail">bonniebannet@gmail.com</span>					                				
+                                                                                                      </a>
+                                                                                                  </li>
+                                                                                                </ul>
+                                                                                                </p-scrollPanel>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          </div>
+                                                                                          
+                                                                                        </div>
+                                                                                        <!-- /.list_inputBox -->
+                                                                                      </fieldset>
+                                                                                  </div>
+                                                                              <div class=row>
+                                                                                      <fieldset class="form-group">
+                                                                                        <div class="btn-grup">
+                                                                                          <button type="button" (click)="pop3.hide()" class="comn-btn btn btn-default close_pop">Cancel</button>
+                                                                                    <button type="submit" class="comn-btn blubtn btn btn-default">Create</button>
+                                                                                        </div>
+                                                                                      </fieldset>
+                                                                                  </div>
+                                                                            </form>
+                                                                      </ng-template>
+                                                                                              
+                                                                      <button [popover]="popTemplate" outsideClick="true" placement="bottom" #pop3="bs-popover"  type="button" class="add-btn addfrnd_popTrig" data-toggle="popover"><span>Add</span></button>
+                                                                    </div>
+                                                                    <!-- /.sec-header -->
+              
+                                                                    <div class="friendslist_container">
+                                                                      <div class="row">
+                                                                        <ul class="frinds_list">
+                                                                          <li>
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-12.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Astha Smith</span>,<span class="gndr">Female</span></p>
+                                                                              <span class="usermail">asthasmith@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-13.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Demon Salvatore</span>,<span class="gndr">Male</span></p>
+                                                                              <span class="usermail">demonsalvatore@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-14.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Caroline Forbbs</span>,<span class="gndr">Female</span></p>
+                                                                              <span class="usermail">carolineforbbs@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-15.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Taylor Lockwood</span>,<span class="gndr">Male</span></p>
+                                                                              <span class="usermail">taylorlockwood@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-16.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Jay Cutler</span>,<span class="gndr">Male</span></p>
+                                                                              <span class="usermail">jaycutler@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-17.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Catherine Brewster</span>,<span class="gndr">Female</span></p>
+                                                                              <span class="usermail">catherinebrewster@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-12.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Astha Smith</span>,<span class="gndr">Female</span></p>
+                                                                              <span class="usermail">asthasmith@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-13.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Demon Salvatore</span>,<span class="gndr">Male</span></p>
+                                                                              <span class="usermail">demonsalvatore@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-14.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Caroline Forbbs</span>,<span class="gndr">Female</span></p>
+                                                                              <span class="usermail">carolineforbbs@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                          <li>												                    						
+                                                                            <div class="profile_thumb">
+                                                                              <div class="table_div">
+                                                                          <div class="tbl_cell">
+                                                                            <div class="userdp">											
+                                                                          <span class="img-wrap" style="background-image: url('assets/images/user-dp-x75-15.jpg');"></span>
+                                                                        </div>
+                                                                        <!-- /.userdp -->
+                                                                          </div>
+                                                                          <div class="tbl_cell">
+                                                                            <div class="user_detail">
+                                                                              <p class="user-name"><span class="name">Taylor Lockwood</span>,<span class="gndr">Male</span></p>
+                                                                              <span class="usermail">taylorlockwood@gmail.com</span>
+                                                                              <div class="prof_actions">
+                                                                            <a routerLink="/front/friends-detail" class="btn comn-btn" role="button">View</a>
+                                                                            <button class="btn dltitm-btn" type="button">Remove from list</button>
+                                                                          </div>
+                                                                            </div>
+                                                                            <!-- /.user_detail -->
+                                                                          </div>
+                                                                        </div>
+                                                                            </div>
+                                                                            <!-- /.profile_thumb -->
+                                                                          </li>
+                                                                          <!-- ============== -->
+                                                                        </ul>
+                                                                        <!-- /.frinds_list -->
+                                                                      </div>
+                                                                    </div>
+                                                                    <!-- ========== /.friendslist_sec ends ========== -->
+              
+                                                                  </div>
+                                                                </div>
+                                                                <!-- /.wishlist_detail -->
+                                                            </div>
+                                                            <!-- /.tabPanel_body -->
+                                                            
+                                                            <!-- /.tabPanel_body -->
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </p-tabPanel>
+                                                <p-tabPanel >
+                                                    <ng-template pTemplate="header">
+                                                        <span class="list_name">Manali Ratang Friends</span>
+                                                        <span class="list_qunatity">10 Friends</span>
+                                                        <span class="list_date">Created on: <span>Jun 6th, 2017</span></span>
+                                                    </ng-template>
+                                                  <div class="right-Verticalcol">
+                                                    <div class="tabPanel_body">
+                                                        <div class="col-xs-12 no_content_div">
+                                                <div class="flex-box">
+                                                  <div class="inline-div">													
+                                                    <span class="img-wrap">
+                                                      <img src="assets/images/cartoon-img-wishlist.png" alt="assets/images">
+                                                    </span>
+                                                    <h2>No-Content Here <br/> <span style="display: inline-block; font-size: 22px; margin-top: 7px; vertical-align: top;">(Tab-2 Container)</span></h2>
+                                                    <p>Please create WishList to add products and see results</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- /.no_content_div -->
+                                                    </div>
+                                                  </div>
+                                                
+                                                </p-tabPanel>
+                                                <p-tabPanel  >
+                                                        <ng-template pTemplate="header">
+                                                            <span class="list_name">Singapour Adventure Friends</span>
+                                                            <span class="list_qunatity">10 Friends</span>
+                                                            <span class="list_date">Created on: <span>Jun 6th, 2017</span></span>
+                                                        </ng-template>
+                                                    <div class="right-Verticalcol">
+                                                      <div class="tabPanel_body">
+                                                          <div class="col-xs-12 no_content_div">
+                                                  <div class="flex-box">
+                                                    <div class="inline-div">													
+                                                      <span class="img-wrap">
+                                                        <img src="assets/images/cartoon-img-wishlist.png" alt="assets/images">
+                                                      </span>
+                                                      <h2>No-Content Here <br/> <span style="display: inline-block; font-size: 22px; margin-top: 7px; vertical-align: top;">(Tab-3 Container)</span></h2>
+                                                      <p>Please create WishList to add products and see results</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                      </div>
+                                                </p-tabPanel>
+                                            </p-tabView>
+                                       
+                                        </div>
+                                   </div>
+                                  <!-- /.segregate_wrapper -->
+                                </div>											
+                              </div>
+                              <!-- /.inner_segregate -->
+                                    </div>
+                                  </p-tabPanel>
+                              </p-tabView>
+
+
+                         
+                          </div>
+                          <!-- /.page_HorizontalTab -->
+  
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                </div>
+                <!-- /.page_body -->
+  
+              </div>							
+            </div>
+            <!-- /.content_wrap -->
+          </div>
+          <!-- ========= /.left_body ends ========= -->
+          <app-sidebar></app-sidebar>
+          <!-- ========= /.rightbar ends ========= -->			
+        </div>
+        <!-- /.module_wrap -->
+      </div>		
+    </section> 
+    <!-- /.page_content -->
+
+    	<!-- /.page_content -->
+
+<!-- <app-footer></app-footer> -->
+
+<ng-template #template  >
+    <div class="modal-header">
+        <button type="button" class="close_btn btn pull-right" (click)="modalRef.hide()" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-inner text-center">
+          <div class="col-xs-12">
+            <span class="icon-trash"></span>
+            <p>Are you sure you want remove<br/> <b>’’Singapour Adventure Friends’’</b> <br/>From your Friends group?</p>	
+          </div>		    
+        <div class="col-xs-12 modal-footer">
+            <button type="button" class="btn comn-btn" (click)="modalRef.hide()">Cancel</button>
+            <button type="button" class="btn comn-btn removebtn">Remove</button>
+        </div>
+        </div>
+      </div>
+</ng-template>

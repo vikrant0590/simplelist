@@ -1,0 +1,154 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+/* subscription plans */
+.subscription_plan_sec {
+	background-color:#fff;
+	padding:30px 15px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); 	
+}
+.pricing_table_sec {
+float: left;
+width: 100%;
+padding: 60px 0px;
+text-align:center;
+@include breakpoint(small) {
+    padding: 30px 0px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $base-color-2;
+    padding:0px 15px;
+    @include breakpoint(medium) {
+        font-size: 25px;
+    }
+    @include breakpoint(x-small) {
+        font-size: 20px;
+    }
+}
+p {
+    color: $text-color;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+}
+
+/* subscription plan billing start */
+.plan_billing {
+	max-width: 385px;
+	width:100%;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
+	margin: 40px auto 0;
+	display:inline-block;
+	@include breakpoint(x-small) {
+		max-width: 100%;
+		width: 95%;
+	}
+	.signInButtnSec {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.form_row {
+		margin-bottom: 25px !important;
+		&:last-child {
+			margin-bottom: 10px !important;
+		}
+		p {
+			margin-bottom: 5px;
+			margin-top: 0px;
+		}
+		.half_right {
+			@include breakpoint(small) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&.account_details {
+		background-color:#fff;
+		border:solid 1px #ddd;
+		max-width:780px;
+		width:100%;
+		margin:0px auto;
+		padding:20px;
+		margin:40px auto 0;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
+		@include breakpoint(x-small) {
+			max-width: 100%;
+			width: 95%;
+		}
+		.account_details_row {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			@include breakpoint(small) {
+				margin-bottom: 0px;
+			}
+			.account_details_flds {
+				@include breakpoint(small) {
+					margin-bottom: 15px;
+				}
+				&.account_fld_group {
+					@include breakpoint(small) {
+						margin-bottom: 0px;
+					}	
+				}
+				.myselect {
+					.btn {
+						.caret {
+							display: inline-block;
+							border-left: 4px solid rgba(0, 0, 0, 0);
+							border-right: 4px solid rgba(0, 0, 0, 0);
+							border-top: 4px dashed #333;
+							border-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		.form_row {
+			@include breakpoint(small) {
+				margin-bottom: 0px !important;
+			}			
+			p {
+				margin-bottom: 5px;
+				margin-top: 0px;
+			}
+			.btn-group {
+				width: 100%;
+			}
+			.bootstrap-select {
+				.btn {
+					font-size: 13px;
+					&:hover, &:focus, &:active {
+						.caret {
+							border-top :4px dashed #61c4de;
+						}
+					}
+				}
+			}
+			.half_right {
+				padding-right:10px;
+				@include breakpoint(small) {
+					margin-bottom: 15px;
+					padding-right:15px;
+				}
+			}
+			.half_left {
+				padding-left:10px;
+				@include breakpoint(small) {
+					margin-bottom: 15px;
+					padding-left:15px;
+				}
+			}
+		}
+	}
+}
+/* subscription plan billing end */
+

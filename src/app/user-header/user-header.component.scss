@@ -1,0 +1,203 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+@import '~sass/base';
+@import "~animate.css/animate.css";
+
+.user-header {
+    background-color: #FCFCFC;
+    background-image: url('assets/images/deals-header-bg.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 40px;
+    .tbl_cell {
+        text-align: center;
+        vertical-align: middle;
+        &:after {
+            background-color: #000;
+            content: "";
+            display: block;
+            height: 100%;
+            max-height: 150px;
+            opacity: 0.1;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            @include transform(translateY(-50%));
+            width: 1px;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &.deals-header {
+        padding-top: 30px;
+        & > .row > .table_div {
+            table-layout: fixed;
+        }
+        .tbl_cell {
+            vertical-align: top;
+        }
+    }
+    .tbl-content {
+        display: inline-block;
+        float: none;
+        max-width: 100%;
+        padding: 44px 15px;
+        width: auto;
+        .img-wrap {
+            display: inline-block;
+            float: none;
+            max-width: 100%;
+            img {
+                float: left;
+                max-width: 100%;
+            }
+        }
+        h2, p {
+            clear: both;
+            display: inline-block;
+            float: none;
+            line-height: 1.3;
+            width: 100%;
+        }
+        h2 {
+            color: $heading-color;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 14px;
+        }
+        p {
+            color: $text-color;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 19px;
+        }
+        .comn-btn {
+            border: 1px dashed rgba(0,0,0,0.23);
+            color: $heading-color;
+            padding: 7px 10px 8px 33px;
+            &:after {
+                display: block;
+                left: 12px;
+                position: absolute;
+                top: 50%;
+                // @include transform(translateY(-50%));
+            }
+            &.explr-prdct:after {
+                content: url('assets/images/icon-search-sml.png');
+                margin-top: -7px;
+            }
+            &.frnd-invit {
+                padding-left: 36px;
+                &:after {
+                    content: url('assets/images/icon-add-user-sml.png');
+                    margin-top: -9px;
+                }
+            }
+            &:hover, &:focus, &:active {
+                background-color: rgba(0, 0, 0, 0);
+                border-color: #000000;
+            }
+        }
+    }
+    .deals_slider {
+        clear: both;
+        float: left;
+        position: relative;
+        text-align: left;
+        width: 100%;
+        .slidHeader {
+            float: left;
+            padding-right: 75px;
+            position: relative;
+            width: 100%;
+            @include breakpoint(xxxlarge) {
+                padding-right: 0 !important;
+            }
+            & > h2 {
+                color: #0b3763;
+                display: inline-block;
+                float: left;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.2;
+                margin: 5px 0 0;
+                vertical-align: middle;
+                width: auto;
+                @include breakpoint(xxxlarge) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+            .comn-btn {
+                color: $heading-color-2;
+                display: inline-block;
+                @include border-radius(2px);
+                float: right;
+                position: relative;
+                vertical-align: middle;
+                &:hover, &:focus, &:active {
+                    color: #ffffff;
+                }
+                @include breakpoint(xxxlarge) {
+                    float: left;
+                }
+            }
+        }
+        .cusCarousel {
+            float: left;
+            padding: 33px 0 0;
+            position: relative;
+            width: 100%;
+            .controls-wrap {
+                overflow: hidden;
+                top: -30px !important;
+            }
+            .carousel-control {
+                margin-left: 10px;
+                &:first-child {
+                    margin: 0;
+                }
+            }
+        }
+        .owl-carousel {
+            &.deals_owlslider {
+                padding: 33px 0 0;
+                @include breakpoint(xxxlarge) {
+                    padding-top: 15px !important;
+                }
+                .list-item {
+                    background: #fcfcfc none repeat scroll 0 0;
+                    display: inline-block;
+                    float: left;
+                    overflow: hidden;
+                    width: 100%;
+                    .product_view1 {
+                        display: block;
+                        float: left;
+                        width: 100%;
+                        .table_div {
+                            .tbl_cell {
+                                @media (max-width:414px) {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                    .tbl_cell:after {
+                        display: none;
+                    }
+                }
+                .owl-nav {
+                    top: -30px;
+                    @include breakpoint(xxxlarge) {
+                        top:-50px !important;
+                    }
+                }
+            }
+        }
+    }
+}
